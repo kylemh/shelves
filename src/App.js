@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { getCollectionsFromUser } from './api/discogsAPI';
+import Header from './components/Header/Header';
+// import styles from './App.module.scss';
 
 class App extends Component {
+  state = {
+    collections: [],
+  };
+
+  async componentDidMount() {
+    const { pagination, releases } = await getCollectionsFromUser();
+    console.log('pagination:\n', pagination);
+    console.log('collections:\n', releases);
+    this.setState({ collections: releases });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+        <Header />
+      </>
     );
   }
 }
