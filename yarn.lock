@@ -1375,6 +1375,14 @@
     react-inspector "^2.3.0"
     uuid "^3.3.2"
 
+"@storybook/addon-centered@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-centered/-/addon-centered-4.1.1.tgz#0e1fb411ea128957cd41743a5371757f28250307"
+  integrity sha512-3Ea0ML2GSOyklC1hpUAY3VF7LpYijnD9L0bDpVDr2mEnq7lecs1Ts3qWyusPilcYbpXK03VIee20H6dPVMUxJA==
+  dependencies:
+    core-js "^2.5.7"
+    global "^4.3.2"
+
 "@storybook/addon-knobs@^4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-4.1.1.tgz#cb131121ffeac10d5d7ddfc28ba036449c2a4a11"

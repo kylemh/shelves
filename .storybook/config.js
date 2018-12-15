@@ -1,5 +1,7 @@
 import { configure, addDecorator } from '@storybook/react';
 import { checkA11y } from '@storybook/addon-a11y';
+import centered from '@storybook/addon-centered';
+
 import requireContext from './require-context.macro';
 
 const req = requireContext('../src/components', true, /\.stories\.js$/);
@@ -9,5 +11,6 @@ function loadStories() {
 }
 
 addDecorator(checkA11y);
+addDecorator(centered);
 
 configure(loadStories, module);
