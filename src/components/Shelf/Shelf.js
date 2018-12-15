@@ -5,12 +5,16 @@ import styles from './Shelf.module.scss';
 class Shelf extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
-    items: PropTypes.arrayOf(PropTypes.shape({
+    releases: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string.isRequired,
-      primaryArtist: PropTypes.string.isRequired,
+      primaryArtistName: PropTypes.string.isRequired,
       year: PropTypes.number.isRequired,
       id: PropTypes.number.isRequired,
     })),
+  };
+
+  static defaultProps = {
+    releases: [],
   };
 
   render() {
@@ -20,9 +24,9 @@ class Shelf extends React.Component {
       <section className={styles.Shelf}>
         <h2>Shelf</h2>
         <div className={styles.itemsContainer}>
-          {props.items.map(({ title, primaryArtist, year, id }) => (
+          {props.releases.map(({ title, primaryArtistName, year, id }) => (
               <article key={id}>
-                <p>{title} by {primaryArtist} in {year}</p>
+                <p>{title} by {primaryArtistName} in {year}</p>
               </article>
             )
           )}
