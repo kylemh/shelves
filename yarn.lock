@@ -1420,6 +1420,20 @@
     read-pkg-up "^4.0.0"
     regenerator-runtime "^0.12.1"
 
+"@storybook/addon-viewport@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-viewport/-/addon-viewport-4.1.1.tgz#e6d76086c32c7e1b8a63ec7e47f2b1130aa9c5ef"
+  integrity sha512-ymso6johmVFHGM3iwJ4vEJJcgu2dMyRXEcUeYdsOB/C4jD1BzYahCIXZ3KV/Ux4paM+09K2N7t8aeTZfD09/Kg==
+  dependencies:
+    "@emotion/styled" "^0.10.6"
+    "@storybook/addons" "4.1.1"
+    "@storybook/components" "4.1.1"
+    "@storybook/core-events" "4.1.1"
+    core-js "^2.5.7"
+    global "^4.3.2"
+    prop-types "^15.6.2"
+    util-deprecate "^1.0.2"
+
 "@storybook/addons@4.1.1", "@storybook/addons@^4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.1.1.tgz#79aa4b81cc54ae46590926acf2dd7e0fcb5cc25a"
