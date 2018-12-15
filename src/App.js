@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getCollectionsFromUser } from './api/discogsAPI';
 import Header from './components/Header/Header';
-// import styles from './App.module.scss';
+import styles from './App.module.scss';
 
 class App extends Component {
   state = {
@@ -17,9 +17,9 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <main className={styles.App}>
         <Header />
-      </>
+      </main>
     );
   }
 }
