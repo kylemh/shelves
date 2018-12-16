@@ -1,4 +1,5 @@
 import { configure, addDecorator } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 import { checkA11y } from '@storybook/addon-a11y';
 import centered from '@storybook/addon-centered';
 
@@ -10,6 +11,11 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
+addDecorator(
+  withInfo({
+      header: false
+  })
+);
 addDecorator(checkA11y);
 addDecorator(centered);
 
