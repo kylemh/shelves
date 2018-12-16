@@ -1,0 +1,46 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.Collection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: $white;
+  border: 1px solid $primary;
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.25);
+  height: 150px;
+  width: 150px;
+
+  @include below-screen-lg {
+    height: 125px;
+    width: 125px;
+  }
+
+  @include below-screen-sm {
+    height: 100px;
+    width: 100px;
+  }
+
+  @include on-hover-and-focus {
+    cursor: pointer;
+  }
+}
+
+.title {
+  margin: 0.25rem 0;
+  padding: 0;
+}
+
+.artist {
+  margin: 0;
+  padding: 0;
+}
+
+.year {
+  margin: 0.25rem 0;
+  padding: 0;
+}
