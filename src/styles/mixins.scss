@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+@mixin below-screen-sm {
+  @media (max-width: #{$breakpointSm}) {
+    @content;
+  }
+}
+
+@mixin below-screen-md {
+  @media (max-width: #{$breakpointMd}) {
+    @content;
+  }
+}
+
+@mixin below-screen-lg {
+  @media (max-width: #{$breakpointLg}) {
+    @content;
+  }
+}
+
+@mixin below-screen-xl {
+  @media (max-width: #{$breakpointXl}) {
+    @content;
+  }
+}
