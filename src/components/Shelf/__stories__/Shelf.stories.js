@@ -12,16 +12,16 @@ const mockReleasesArray = [
     id: 1160584,
   },
   {
-    title: 'Believe',
-    primaryArtistName: 'Cher',
-    year: 1998,
-    id: 1160584,
+    title: 'Something Borrowed, Something Blue',
+    primaryArtistName: 'Deadbeat',
+    year: 2004,
+    id: 240315,
   },
   {
-    title: 'Believe',
-    primaryArtistName: 'Cher',
-    year: 1998,
-    id: 1160584,
+    title: 'Selected Ambient Works Volume II',
+    primaryArtistName: 'Aphex Twin',
+    year: 2012,
+    id: 3577040,
   },
 ];
 
