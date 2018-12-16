@@ -1,0 +1,24 @@
+@import './font-scale.scss';
+@import './variables.scss';
+
+body {
+  font-family: $secondaryFont;
+  margin: 0;
+  padding: 0;
+  hyphens: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  color: $primary;
+  fill: $primary;
+  font-family: $primaryFont;
+}

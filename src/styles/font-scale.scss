@@ -1,0 +1,44 @@
+/* Golden Ditonic Scale formula https://blog.envylabs.com/responsive-typographic-scales-in-css-b9f60431d1c4 */
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.0581rem;
+}
+
+h2 {
+  font-size: 1.618rem;
+}
+
+h3 {
+  font-size: 1.272rem;
+}
+
+h4 {
+  font-size: 0.7861rem;
+}
+
+h5 {
+  font-size: 0.618rem;
+}
+
+h6 {
+  font-size: 0.4856rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+button {
+  font-size: 1.375rem;
+}
