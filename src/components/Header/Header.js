@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from './Header.module.scss';
 
 function Header() {
   return (
-    <header>
-      <h1>Shelf</h1>
+    <header className={styles.Header}>
+      <h1 className={styles.logo}>Shelf</h1>
     </header>
   )
 }
