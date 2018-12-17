@@ -1,10 +1,11 @@
+@import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 
 .Rack {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 250px;
+  height: 12rem;
   width: 100vw;
   padding: 1rem 0;
   background-color: $feint;
