@@ -20,9 +20,12 @@ class App extends Component {
     const { state } = this;
 
     return (
-      <main className={styles.App}>
+      <main>
         <Header />
         <Rack collection={state.collection} />
+        <div className={styles.container}>
+          <button style={{ width: '95vw', height: '200px' }}>Hello</button>
+        </div>
       </main>
     );
   }
