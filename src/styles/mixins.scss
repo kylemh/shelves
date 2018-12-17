@@ -23,10 +23,3 @@
     @content;
   }
 }
-
-@mixin on-hover-and-focus {
-  &:focus,
-  &:hover {
-    @content;
-  }
-}

@@ -26,7 +26,7 @@
     width: 100px;
   }
 
-  @include on-hover-and-focus {
+  &:hover {
     cursor: pointer;
   }
 }
