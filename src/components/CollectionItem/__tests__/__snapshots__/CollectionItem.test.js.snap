@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Collection should render 1`] = `
+exports[`CollectionItem should render 1`] = `
 <article
-  className="Collection"
+  className="CollectionItem"
 >
   <h4
     className="title"

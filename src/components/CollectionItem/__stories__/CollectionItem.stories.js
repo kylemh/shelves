@@ -2,14 +2,15 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, number } from '@storybook/addon-knobs';
 
-import Collection from '../Collection';
+import CollectionItem from '../CollectionItem';
 
-storiesOf('Collection', module)
+storiesOf('CollectionItem', module)
   .addDecorator(withKnobs)
   .add('default', () => (
-    <Collection
-      title={text('title', 'Cosmogramma')}
+    <CollectionItem
+      id={number('id', 2595467)}
       primaryArtistName={text('primaryArtistName', 'Flying Lotus')}
+      title={text('title', 'Cosmogramma')}
       year={number('year', 2010)}
     />
   ));
