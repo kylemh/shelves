@@ -1,0 +1,30 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.CreateShelfButton {
+  background-color: rgba(0, 0, 0, 0);
+  border: 4px dashed $feint;
+  border-radius: 10px;
+  height: $shelfHeight;
+  width: 100%;
+  transition: all 0.2s linear;
+
+  .label {
+    color: $feint;
+  }
+
+  @include on-hover-and-focus {
+    cursor: pointer;
+    background-color: $feint;
+    border-style: solid;
+    outline: none;
+
+    .label {
+      color: $primary;
+    }
+  }
+
+  &:active {
+    border-color: darken($color: $feint, $amount: 30);
+  }
+}
