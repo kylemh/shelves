@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Rack from './components/Rack/Rack';
 import Shelf from './components/Shelf/Shelf';
 import CreateShelfButton from './components/CreateShelfButton/CreateShelfButton';
-import transformReleaseData from './utils/transformReleaseData';
+import { transformReleaseData } from './utils';
 import styles from './App.module.scss';
 
 class App extends Component {
@@ -21,7 +21,11 @@ class App extends Component {
 
   createShelf = () => {
     const numberOfShelves = this.state.shelves.length;
-    const id = (Date.now().toString(36) + Math.random().toString(36).substr(2, 5));
+    const id =
+      Date.now().toString(36) +
+      Math.random()
+        .toString(36)
+        .substr(2, 5);
 
     this.setState(prevState => ({
       shelves: [...prevState.shelves, { name: `New Shelf ${numberOfShelves + 1}`, id }],
@@ -34,13 +38,13 @@ class App extends Component {
     return (
       <main>
         <Header />
-        <Rack collection={state.collection} />
-        <div className={styles.container}>
-          {state.shelves.map(shelf => (
-            <Shelf {...shelf} key={shelf.id} />
-          ))}
-          <CreateShelfButton createShelf={this.createShelf} />
-        </div>
+          <Rack collection={state.collection} />
+          <div className={styles.container}>
+            {state.shelves.map(shelf => (
+              <Shelf {...shelf} key={shelf.id} />
+            ))}
+            <CreateShelfButton createShelf={this.createShelf} />
+          </div>
       </main>
     );
   }
