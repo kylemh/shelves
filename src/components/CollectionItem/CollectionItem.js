@@ -7,6 +7,10 @@ export default class CollectionItem extends React.Component {
     ...CollectionItemPropTypes,
   };
 
+  static defaultProps = {
+    year: undefined,
+  };
+
   render() {
     const { props } = this;
 
@@ -14,7 +18,7 @@ export default class CollectionItem extends React.Component {
       <article className={styles.CollectionItem}>
         <h4 className={styles.title}>{props.title}</h4>
         <h5 className={styles.artist}>by {props.primaryArtistName}</h5>
-        <h5 className={styles.year}>{props.year}</h5>
+        {Boolean(props.year) && <h5 className={styles.year}>{props.year}</h5>}
       </article>
     );
   }

@@ -1,0 +1,38 @@
+{
+  "instance_id": 27869111,
+  "date_added": "2013-06-25T08:19:34-07:00",
+  "basic_information": {
+    "labels": [
+      {
+        "name": "2062",
+        "entity_type": "1",
+        "catno": "2062 0202",
+        "resource_url": "https://api.discogs.com/labels/8450",
+        "id": 8450,
+        "entity_type_name": "Label"
+      }
+    ],
+    "year": 0,
+    "master_url": "https://api.discogs.com/masters/476851",
+    "artists": [
+      {
+        "join": "",
+        "name": "William Basinski",
+        "anv": "",
+        "tracks": "",
+        "role": "",
+        "resource_url": "https://api.discogs.com/artists/34630",
+        "id": 34630
+      }
+    ],
+    "id": 118447,
+    "thumb": "",
+    "title": "The Disintegration Loops II",
+    "formats": [{ "descriptions": ["Album", "Repress"], "name": "CD", "qty": "1" }],
+    "cover_image": "",
+    "resource_url": "https://api.discogs.com/releases/118447",
+    "master_id": 476851
+  },
+  "id": 118447,
+  "rating": 0
+}

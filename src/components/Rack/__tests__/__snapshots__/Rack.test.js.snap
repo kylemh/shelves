@@ -30,7 +30,6 @@ exports[`Rack should render 1`] = `
     key="118447"
     primaryArtistName="William Basinski"
     title="The Disintegration Loops II"
-    year={0}
   />
   <CollectionItem
     id={116400}
@@ -51,7 +50,6 @@ exports[`Rack should render 1`] = `
     key="265430"
     primaryArtistName="William Basinski"
     title="The Disintegration Loops IV"
-    year={0}
   />
   <CollectionItem
     id={1731724}
@@ -65,7 +63,6 @@ exports[`Rack should render 1`] = `
     key="887797"
     primaryArtistName="Barry White"
     title="Best Of Barry White, Love Unlimited & Love Unlimited Orchestra"
-    year={0}
   />
   <CollectionItem
     id={168870}

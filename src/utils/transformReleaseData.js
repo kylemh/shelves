@@ -18,7 +18,7 @@ function transformReleaseData({ id, basic_information: basicInfo }) {
     id,
     primaryArtistName,
     title,
-    year,
+    year: year === 0 ? undefined : year,
   };
 }
 
