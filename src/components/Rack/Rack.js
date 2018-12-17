@@ -6,7 +6,7 @@ import styles from './Rack.module.scss';
 
 export default class Rack extends React.Component {
   static propTypes = {
-    collections: PropTypes.arrayOf(
+    collection: PropTypes.arrayOf(
       PropTypes.shape({
         ...CollectionItemPropTypes,
       })
@@ -18,7 +18,7 @@ export default class Rack extends React.Component {
 
     return (
       <section className={styles.Rack}>
-        {props.collections.map(collectionItem => (
+        {props.collection.map(collectionItem => (
           <CollectionItem {...collectionItem} key={collectionItem.id} />
         ))}
       </section>

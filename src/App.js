@@ -6,13 +6,11 @@ import styles from './App.module.scss';
 
 class App extends Component {
   state = {
-    collections: [],
+    collection: [],
   };
 
   async componentDidMount() {
     const { pagination, releases } = await getReleasesFromUser();
-    console.log('pagination:\n', pagination);
-    console.log('collections:\n', releases);
     this.setState({ collection: releases });
   }
 
@@ -22,7 +20,7 @@ class App extends Component {
     return (
       <main className={styles.App}>
         <Header />
-        <Rack collections={state.collections} />
+        <Rack collection={state.collection} />
       </main>
     );
   }
