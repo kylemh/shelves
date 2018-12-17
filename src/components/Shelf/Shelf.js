@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import CollectionItem from '../CollectionItem/CollectionItem';
-import CollectionItemPropTypes from '../CollectionItem/CollectionItemPropTypes';
+import ReleaseItem from '../ReleaseItem/ReleaseItem';
+import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
 import styles from './Shelf.module.scss';
 
 class Shelf extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     releases: PropTypes.arrayOf(PropTypes.shape({
-      ...CollectionItemPropTypes,
+      ...ReleaseItemPropTypes,
     })),
   };
 
@@ -24,7 +24,7 @@ class Shelf extends React.Component {
         <h2>Shelf</h2>
         <div className={styles.itemsContainer}>
           {props.releases.map(release => (
-              <CollectionItem {...release} key={release.id} />
+              <ReleaseItem {...release} key={release.id} />
             )
           )}
         </div>

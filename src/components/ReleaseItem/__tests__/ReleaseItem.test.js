@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CollectionItem from '../CollectionItem';
+import ReleaseItem from '../ReleaseItem';
 
-describe('CollectionItem', () => {
+describe('ReleaseItem', () => {
   const requiredProps = {
     id: 2595467,
     title: 'Cosmogramma',
@@ -11,7 +11,7 @@ describe('CollectionItem', () => {
   };
 
   it('should render', () => {
-    const wrapper = shallow(<CollectionItem {...requiredProps} />);
+    const wrapper = shallow(<ReleaseItem {...requiredProps} />);
 
     expect(wrapper).toMatchSnapshot();
   });
