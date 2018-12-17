@@ -1,0 +1,38 @@
+{
+  "instance_id": 27869772,
+  "date_added": "2009-12-11T13:58:48-08:00",
+  "basic_information": {
+    "labels": [
+      {
+        "name": "4AD",
+        "entity_type": "1",
+        "catno": "CAD 905",
+        "resource_url": "https://api.discogs.com/labels/634",
+        "id": 634,
+        "entity_type_name": "Label"
+      }
+    ],
+    "year": 1989,
+    "master_url": "https://api.discogs.com/masters/16764",
+    "artists": [
+      {
+        "join": "",
+        "name": "Pixies",
+        "anv": "",
+        "tracks": "",
+        "role": "",
+        "resource_url": "https://api.discogs.com/artists/231577",
+        "id": 231577
+      }
+    ],
+    "id": 381224,
+    "thumb": "",
+    "title": "Doolittle",
+    "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+    "cover_image": "",
+    "resource_url": "https://api.discogs.com/releases/381224",
+    "master_id": 16764
+  },
+  "id": 381224,
+  "rating": 0
+}

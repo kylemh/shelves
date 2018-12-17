@@ -1,0 +1,2057 @@
+{
+  "pagination": {
+    "per_page": 50,
+    "items": 3871,
+    "page": 1,
+    "urls": {
+      "last": "https://api.discogs.com/users/blacklight/collection/folders/0/releases?per_page=50&page=78",
+      "next": "https://api.discogs.com/users/blacklight/collection/folders/0/releases?per_page=50&page=2"
+    },
+    "pages": 78
+  },
+  "releases": [
+    {
+      "instance_id": 27868899,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "!K7 Records",
+            "entity_type": "1",
+            "catno": "!K7128LP",
+            "resource_url": "https://api.discogs.com/labels/29377",
+            "id": 29377,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2002,
+        "master_url": "https://api.discogs.com/masters/64128",
+        "artists": [
+          {
+            "join": "",
+            "name": "Swayzak",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/232",
+            "id": 232
+          }
+        ],
+        "id": 76035,
+        "thumb": "",
+        "title": "Dirty Dancing",
+        "formats": [{ "descriptions": ["LP"], "name": "Vinyl", "qty": "2" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/76035",
+        "master_id": 64128
+      },
+      "id": 76035,
+      "rating": 5
+    },
+    {
+      "instance_id": 27869409,
+      "date_added": "2010-01-10T05:22:22-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "[OHM] Records",
+            "entity_type": "1",
+            "catno": "1.0 OHM",
+            "resource_url": "https://api.discogs.com/labels/11963",
+            "id": 11963,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2002,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Jazkamer",
+            "anv": "Jazzkammer",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/342474",
+            "id": 342474
+          }
+        ],
+        "id": 198657,
+        "thumb": "",
+        "title": "Sound Of Music",
+        "formats": [{ "descriptions": ["Mini"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/198657",
+        "master_id": 0
+      },
+      "id": 198657,
+      "rating": 0
+    },
+    {
+      "instance_id": 267594368,
+      "date_added": "2017-12-19T23:37:17-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "[PIAS] Recordings",
+            "entity_type": "1",
+            "catno": "451.1040.020",
+            "resource_url": "https://api.discogs.com/labels/61218",
+            "id": 61218,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "Different",
+            "entity_type": "1",
+            "catno": "DIFB 1040 CD",
+            "resource_url": "https://api.discogs.com/labels/30379",
+            "id": 30379,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2006,
+        "master_url": "https://api.discogs.com/masters/30415",
+        "artists": [
+          {
+            "join": "",
+            "name": "Tiga",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/1543",
+            "id": 1543
+          }
+        ],
+        "id": 619145,
+        "thumb": "",
+        "title": "Sexor",
+        "formats": [
+          { "descriptions": ["Album"], "text": "Super Jewel Box", "name": "CD", "qty": "1" }
+        ],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/619145",
+        "master_id": 30415
+      },
+      "id": 619145,
+      "rating": 3
+    },
+    {
+      "instance_id": 27870235,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "~scape",
+            "entity_type": "1",
+            "catno": "sc38lp",
+            "resource_url": "https://api.discogs.com/labels/1495",
+            "id": 1495,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2006,
+        "master_url": "https://api.discogs.com/masters/53423",
+        "artists": [
+          {
+            "join": "",
+            "name": "Mapstation",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/32883",
+            "id": 32883
+          }
+        ],
+        "id": 679424,
+        "thumb": "",
+        "title": "Distance Told Me Things To Be Said",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/679424",
+        "master_id": 53423
+      },
+      "id": 679424,
+      "rating": 0
+    },
+    {
+      "instance_id": 27868673,
+      "date_added": "2010-01-10T00:50:27-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "~scape",
+            "entity_type": "1",
+            "catno": "~scape 005 cd",
+            "resource_url": "https://api.discogs.com/labels/1495",
+            "id": 1495,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "~scape",
+            "entity_type": "1",
+            "catno": "~scape 005",
+            "resource_url": "https://api.discogs.com/labels/1495",
+            "id": 1495,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2000,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Various",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/194",
+            "id": 194
+          }
+        ],
+        "id": 35126,
+        "thumb": "",
+        "title": "Staedtizism",
+        "formats": [{ "descriptions": ["Compilation"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/35126",
+        "master_id": 0
+      },
+      "id": 35126,
+      "rating": 0
+    },
+    {
+      "instance_id": 27868914,
+      "date_added": "2012-04-02T05:17:36-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "~scape",
+            "entity_type": "1",
+            "catno": "15 cd",
+            "resource_url": "https://api.discogs.com/labels/1495",
+            "id": 1495,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "~scape",
+            "entity_type": "1",
+            "catno": "sc 15cd",
+            "resource_url": "https://api.discogs.com/labels/1495",
+            "id": 1495,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2002,
+        "master_url": "https://api.discogs.com/masters/33272",
+        "artists": [
+          {
+            "join": "",
+            "name": "Deadbeat",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/15056",
+            "id": 15056
+          }
+        ],
+        "id": 79026,
+        "thumb": "",
+        "title": "Wild Life Documentaries",
+        "formats": [{ "descriptions": ["Album"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/79026",
+        "master_id": 33272
+      },
+      "id": 79026,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869511,
+      "date_added": "2012-04-02T05:18:07-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "~scape",
+            "entity_type": "1",
+            "catno": "sc21",
+            "resource_url": "https://api.discogs.com/labels/1495",
+            "id": 1495,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "~scape",
+            "entity_type": "1",
+            "catno": "sc21cd",
+            "resource_url": "https://api.discogs.com/labels/1495",
+            "id": 1495,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2004,
+        "master_url": "https://api.discogs.com/masters/33277",
+        "artists": [
+          {
+            "join": "",
+            "name": "Deadbeat",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/15056",
+            "id": 15056
+          }
+        ],
+        "id": 240315,
+        "thumb": "",
+        "title": "Something Borrowed, Something Blue",
+        "formats": [{ "descriptions": ["Album"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/240315",
+        "master_id": 33277
+      },
+      "id": 240315,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869132,
+      "date_added": "2010-01-04T11:26:53-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "12k",
+            "entity_type": "1",
+            "catno": "12k1022",
+            "resource_url": "https://api.discogs.com/labels/946",
+            "id": 946,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2003,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Sogar",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/55204",
+            "id": 55204
+          }
+        ],
+        "id": 122220,
+        "thumb": "",
+        "title": "Apikal.Blend",
+        "formats": [{ "descriptions": ["Album"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/122220",
+        "master_id": 0
+      },
+      "id": 122220,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869555,
+      "date_added": "2009-12-11T13:31:45-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "12k",
+            "entity_type": "1",
+            "catno": "12K1028",
+            "resource_url": "https://api.discogs.com/labels/946",
+            "id": 946,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2004,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Frank Bretschneider",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/3821",
+            "id": 3821
+          }
+        ],
+        "id": 261563,
+        "thumb": "",
+        "title": "Looping I - VI (And Other Assorted Love Songs)",
+        "formats": [{ "descriptions": ["Album", "Limited Edition"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/261563",
+        "master_id": 0
+      },
+      "id": 261563,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869854,
+      "date_added": "2009-12-26T23:57:50-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "12k",
+            "entity_type": "1",
+            "catno": "12k1031",
+            "resource_url": "https://api.discogs.com/labels/946",
+            "id": 946,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2005,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Minamo",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/79256",
+            "id": 79256
+          }
+        ],
+        "id": 412120,
+        "thumb": "",
+        "title": "Shining",
+        "formats": [{ "descriptions": ["Album", "Limited Edition"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/412120",
+        "master_id": 0
+      },
+      "id": 412120,
+      "rating": 0
+    },
+    {
+      "instance_id": 144924930,
+      "date_added": "2015-10-25T02:26:16-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "1972",
+            "entity_type": "1",
+            "catno": "if11",
+            "resource_url": "https://api.discogs.com/labels/283751",
+            "id": 283751,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2012,
+        "master_url": "https://api.discogs.com/masters/481",
+        "artists": [
+          {
+            "join": "",
+            "name": "Aphex Twin",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/45",
+            "id": 45
+          }
+        ],
+        "id": 3577040,
+        "thumb": "",
+        "title": "Selected Ambient Works Volume II",
+        "formats": [{ "descriptions": ["LP", "Album", "Reissue"], "name": "Vinyl", "qty": "3" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/3577040",
+        "master_id": 481
+      },
+      "id": 3577040,
+      "rating": 0
+    },
+    {
+      "instance_id": 163031667,
+      "date_added": "2016-03-14T00:52:27-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "1972",
+            "entity_type": "1",
+            "catno": "if13",
+            "resource_url": "https://api.discogs.com/labels/283751",
+            "id": 283751,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2012,
+        "master_url": "https://api.discogs.com/masters/510",
+        "artists": [
+          {
+            "join": "",
+            "name": "Aphex Twin",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/45",
+            "id": 45
+          }
+        ],
+        "id": 3908906,
+        "thumb": "",
+        "title": "Richard D. James Album",
+        "formats": [{ "descriptions": ["LP", "Album", "Reissue"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/3908906",
+        "master_id": 510
+      },
+      "id": 3908906,
+      "rating": 4
+    },
+    {
+      "instance_id": 27868898,
+      "date_added": "2013-06-25T08:15:52-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "2062",
+            "entity_type": "1",
+            "catno": "2062 0201",
+            "resource_url": "https://api.discogs.com/labels/8450",
+            "id": 8450,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2002,
+        "master_url": "https://api.discogs.com/masters/731683",
+        "artists": [
+          {
+            "join": "",
+            "name": "William Basinski",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/34630",
+            "id": 34630
+          }
+        ],
+        "id": 75994,
+        "thumb": "",
+        "title": "The Disintegration Loops",
+        "formats": [{ "descriptions": ["Album"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/75994",
+        "master_id": 731683
+      },
+      "id": 75994,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869111,
+      "date_added": "2013-06-25T08:19:34-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "2062",
+            "entity_type": "1",
+            "catno": "2062 0202",
+            "resource_url": "https://api.discogs.com/labels/8450",
+            "id": 8450,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 0,
+        "master_url": "https://api.discogs.com/masters/476851",
+        "artists": [
+          {
+            "join": "",
+            "name": "William Basinski",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/34630",
+            "id": 34630
+          }
+        ],
+        "id": 118447,
+        "thumb": "",
+        "title": "The Disintegration Loops II",
+        "formats": [{ "descriptions": ["Album", "Repress"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/118447",
+        "master_id": 476851
+      },
+      "id": 118447,
+      "rating": 0
+    },
+    {
+      "instance_id": 261749678,
+      "date_added": "2017-11-17T23:46:46-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "2062",
+            "entity_type": "1",
+            "catno": "2062 0302",
+            "resource_url": "https://api.discogs.com/labels/8450",
+            "id": 8450,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2005,
+        "master_url": "https://api.discogs.com/masters/476858",
+        "artists": [
+          {
+            "join": "",
+            "name": "William Basinski",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/34630",
+            "id": 34630
+          }
+        ],
+        "id": 116400,
+        "thumb": "",
+        "title": "Watermusic II",
+        "formats": [{ "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/116400",
+        "master_id": 476858
+      },
+      "id": 116400,
+      "rating": 4
+    },
+    {
+      "instance_id": 27869567,
+      "date_added": "2013-06-25T08:20:09-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "2062",
+            "entity_type": "1",
+            "catno": "2062 0304",
+            "resource_url": "https://api.discogs.com/labels/8450",
+            "id": 8450,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2003,
+        "master_url": "https://api.discogs.com/masters/921848",
+        "artists": [
+          {
+            "join": "",
+            "name": "William Basinski",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/34630",
+            "id": 34630
+          }
+        ],
+        "id": 265427,
+        "thumb": "",
+        "title": "The Disintegration Loops III",
+        "formats": [{ "descriptions": ["Album"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/265427",
+        "master_id": 921848
+      },
+      "id": 265427,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869568,
+      "date_added": "2013-06-25T08:20:33-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "2062",
+            "entity_type": "1",
+            "catno": "2062 0305",
+            "resource_url": "https://api.discogs.com/labels/8450",
+            "id": 8450,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 0,
+        "master_url": "https://api.discogs.com/masters/732357",
+        "artists": [
+          {
+            "join": "",
+            "name": "William Basinski",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/34630",
+            "id": 34630
+          }
+        ],
+        "id": 265430,
+        "thumb": "",
+        "title": "The Disintegration Loops IV",
+        "formats": [{ "descriptions": ["Album", "Repress"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/265430",
+        "master_id": 732357
+      },
+      "id": 265430,
+      "rating": 0
+    },
+    {
+      "instance_id": 136037393,
+      "date_added": "2015-07-26T02:42:26-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "2062",
+            "entity_type": "1",
+            "catno": "2062.0901",
+            "resource_url": "https://api.discogs.com/labels/8450",
+            "id": 8450,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2009,
+        "master_url": "https://api.discogs.com/masters/1043797",
+        "artists": [
+          {
+            "join": "",
+            "name": "William Basinski",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/34630",
+            "id": 34630
+          }
+        ],
+        "id": 1731724,
+        "thumb": "",
+        "title": "92982",
+        "formats": [{ "descriptions": ["Album"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/1731724",
+        "master_id": 1043797
+      },
+      "id": 1731724,
+      "rating": 0
+    },
+    {
+      "instance_id": 27870474,
+      "date_added": "2009-12-11T12:09:39-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "20th Century Records",
+            "entity_type": "1",
+            "catno": "6641 544",
+            "resource_url": "https://api.discogs.com/labels/2350",
+            "id": 2350,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 0,
+        "master_url": "https://api.discogs.com/masters/241549",
+        "artists": [
+          {
+            "join": ",",
+            "name": "Barry White",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/18978",
+            "id": 18978
+          },
+          {
+            "join": "&",
+            "name": "Love Unlimited",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/164269",
+            "id": 164269
+          },
+          {
+            "join": "",
+            "name": "Love Unlimited Orchestra",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/18983",
+            "id": 18983
+          }
+        ],
+        "id": 887797,
+        "thumb": "",
+        "title": "Best Of Barry White, Love Unlimited & Love Unlimited Orchestra",
+        "formats": [{ "descriptions": ["LP", "Compilation"], "name": "Vinyl", "qty": "2" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/887797",
+        "master_id": 241549
+      },
+      "id": 887797,
+      "rating": 0
+    },
+    {
+      "instance_id": 312773587,
+      "date_added": "2018-08-02T00:33:28-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "21 Records",
+            "entity_type": "1",
+            "catno": "810 6351",
+            "resource_url": "https://api.discogs.com/labels/5795",
+            "id": 5795,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "Polydor",
+            "entity_type": "1",
+            "catno": "POSPX 562",
+            "resource_url": "https://api.discogs.com/labels/1610",
+            "id": 1610,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1983,
+        "master_url": "https://api.discogs.com/masters/128150",
+        "artists": [
+          {
+            "join": "",
+            "name": "The Jonzun Crew",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/32454",
+            "id": 32454
+          }
+        ],
+        "id": 168870,
+        "thumb": "",
+        "title": "Space Is The Place",
+        "formats": [{ "descriptions": ["12\"", "45 RPM"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/168870",
+        "master_id": 128150
+      },
+      "id": 168870,
+      "rating": 5
+    },
+    {
+      "instance_id": 27869463,
+      "date_added": "2009-12-19T22:29:57-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "28 Angles",
+            "entity_type": "1",
+            "catno": "28A101",
+            "resource_url": "https://api.discogs.com/labels/18588",
+            "id": 18588,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2003,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Greg Headley",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/166325",
+            "id": 166325
+          }
+        ],
+        "id": 218611,
+        "thumb": "",
+        "title": "A Bulletin On Vertigo",
+        "formats": [{ "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/218611",
+        "master_id": 0
+      },
+      "id": 218611,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869634,
+      "date_added": "2009-12-19T22:29:48-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "28 Angles",
+            "entity_type": "1",
+            "catno": "28A102",
+            "resource_url": "https://api.discogs.com/labels/18588",
+            "id": 18588,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2004,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Greg Headley",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/166325",
+            "id": 166325
+          }
+        ],
+        "id": 327021,
+        "thumb": "",
+        "title": "It Can Leave, It Must Leave",
+        "formats": [{ "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/327021",
+        "master_id": 0
+      },
+      "id": 327021,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869894,
+      "date_added": "2009-12-29T23:28:14-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "3 Beads Of Sweat",
+            "entity_type": "1",
+            "catno": "3BOS 1006.2",
+            "resource_url": "https://api.discogs.com/labels/39967",
+            "id": 39967,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2005,
+        "master_url": "https://api.discogs.com/masters/104303",
+        "artists": [
+          {
+            "join": "",
+            "name": "The Mountain Goats",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/95417",
+            "id": 95417
+          }
+        ],
+        "id": 433675,
+        "thumb": "",
+        "title": "Zopilote Machine",
+        "formats": [{ "descriptions": ["Album", "Reissue"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/433675",
+        "master_id": 104303
+      },
+      "id": 433675,
+      "rating": 0
+    },
+    {
+      "instance_id": 27878263,
+      "date_added": "2012-06-29T06:09:38-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "3BY3",
+            "entity_type": "1",
+            "catno": "3BY3009",
+            "resource_url": "https://api.discogs.com/labels/148153",
+            "id": 148153,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2012,
+        "master_url": "https://api.discogs.com/masters/436023",
+        "artists": [
+          {
+            "join": "",
+            "name": "JK Flesh",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/1357225",
+            "id": 1357225
+          }
+        ],
+        "id": 3599617,
+        "thumb": "",
+        "title": "Posthuman",
+        "formats": [{ "descriptions": ["Album"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/3599617",
+        "master_id": 436023
+      },
+      "id": 3599617,
+      "rating": 0
+    },
+    {
+      "instance_id": 27868978,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "3rd Stone",
+            "entity_type": "1",
+            "catno": "STONE 010 CD",
+            "resource_url": "https://api.discogs.com/labels/10015",
+            "id": 10015,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1994,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Bark Psychosis",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/47870",
+            "id": 47870
+          }
+        ],
+        "id": 89566,
+        "thumb": "",
+        "title": "Independency",
+        "formats": [{ "descriptions": ["Compilation"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/89566",
+        "master_id": 0
+      },
+      "id": 89566,
+      "rating": 4
+    },
+    {
+      "instance_id": 27869661,
+      "date_added": "2012-03-23T08:50:03-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "3rd Stone",
+            "entity_type": "1",
+            "catno": "STONE 041CD",
+            "resource_url": "https://api.discogs.com/labels/10015",
+            "id": 10015,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2004,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Bark Psychosis",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/47870",
+            "id": 47870
+          }
+        ],
+        "id": 338517,
+        "thumb": "",
+        "title": "Replay",
+        "formats": [{ "descriptions": ["Compilation", "Remastered"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/338517",
+        "master_id": 0
+      },
+      "id": 338517,
+      "rating": 4
+    },
+    {
+      "instance_id": 27868913,
+      "date_added": "2009-09-03T11:10:48-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "BAD 310",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1983,
+        "master_url": "https://api.discogs.com/masters/17459",
+        "artists": [
+          {
+            "join": "",
+            "name": "This Mortal Coil",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/60232",
+            "id": 60232
+          }
+        ],
+        "id": 77658,
+        "thumb": "",
+        "title": "Sixteen Days - Gathering Dust",
+        "formats": [{ "descriptions": ["12\"", "45 RPM", "Single"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/77658",
+        "master_id": 17459
+      },
+      "id": 77658,
+      "rating": 0
+    },
+    {
+      "instance_id": 296012805,
+      "date_added": "2018-04-29T01:02:02-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "BAD 504",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1985,
+        "master_url": "https://api.discogs.com/masters/30316",
+        "artists": [
+          {
+            "join": "",
+            "name": "Clan Of Xymox",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/58955",
+            "id": 58955
+          }
+        ],
+        "id": 93165,
+        "thumb": "",
+        "title": "A Day",
+        "formats": [{ "descriptions": ["12\"", "45 RPM"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/93165",
+        "master_id": 30316
+      },
+      "id": 93165,
+      "rating": 5
+    },
+    {
+      "instance_id": 27870073,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 0010",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1990,
+        "master_url": "https://api.discogs.com/masters/16787",
+        "artists": [
+          {
+            "join": "",
+            "name": "Pixies",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/231577",
+            "id": 231577
+          }
+        ],
+        "id": 549718,
+        "thumb": "",
+        "title": "Bossanova",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/549718",
+        "master_id": 16787
+      },
+      "id": 549718,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869336,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 0012",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1990,
+        "master_url": "https://api.discogs.com/masters/5104",
+        "artists": [
+          {
+            "join": "",
+            "name": "Cocteau Twins",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12373",
+            "id": 12373
+          }
+        ],
+        "id": 184990,
+        "thumb": "",
+        "title": "Heaven Or Las Vegas",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/184990",
+        "master_id": 5104
+      },
+      "id": 184990,
+      "rating": 4
+    },
+    {
+      "instance_id": 128966712,
+      "date_added": "2015-05-07T00:18:39-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 1014",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1991,
+        "master_url": "https://api.discogs.com/masters/16797",
+        "artists": [
+          {
+            "join": "",
+            "name": "Pixies",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/231577",
+            "id": 231577
+          }
+        ],
+        "id": 3179266,
+        "thumb": "",
+        "title": "Trompe Le Monde",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/3179266",
+        "master_id": 16797
+      },
+      "id": 3179266,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869819,
+      "date_added": "2013-08-01T02:17:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 3014",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1993,
+        "master_url": "https://api.discogs.com/masters/20764",
+        "artists": [
+          {
+            "join": "",
+            "name": "The Breeders",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/39778",
+            "id": 39778
+          }
+        ],
+        "id": 396179,
+        "thumb": "",
+        "title": "Last Splash",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/396179",
+        "master_id": 20764
+      },
+      "id": 396179,
+      "rating": 4
+    },
+    {
+      "instance_id": 135886905,
+      "date_added": "2015-07-24T10:15:21-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 3509",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2015,
+        "master_url": "https://api.discogs.com/masters/13576",
+        "artists": [
+          {
+            "join": "",
+            "name": "Cocteau Twins",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12373",
+            "id": 12373
+          }
+        ],
+        "id": 7198443,
+        "thumb": "",
+        "title": "The Pink Opaque",
+        "formats": [
+          {
+            "descriptions": ["LP", "Compilation", "Reissue", "Remastered"],
+            "text": "180 Gram",
+            "name": "Vinyl",
+            "qty": "1"
+          }
+        ],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/7198443",
+        "master_id": 13576
+      },
+      "id": 7198443,
+      "rating": 4
+    },
+    {
+      "instance_id": 328847996,
+      "date_added": "2018-10-26T06:00:15-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 404",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1984,
+        "master_url": "https://api.discogs.com/masters/14637",
+        "artists": [
+          {
+            "join": "",
+            "name": "Dead Can Dance",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12368",
+            "id": 12368
+          }
+        ],
+        "id": 66774,
+        "thumb": "",
+        "title": "Dead Can Dance",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/66774",
+        "master_id": 14637
+      },
+      "id": 66774,
+      "rating": 3
+    },
+    {
+      "instance_id": 27868835,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 412",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1984,
+        "master_url": "https://api.discogs.com/masters/5232",
+        "artists": [
+          {
+            "join": "",
+            "name": "Cocteau Twins",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12373",
+            "id": 12373
+          }
+        ],
+        "id": 63993,
+        "thumb": "",
+        "title": "Treasure",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/63993",
+        "master_id": 5232
+      },
+      "id": 63993,
+      "rating": 4
+    },
+    {
+      "instance_id": 27870185,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 5013",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1995,
+        "master_url": "https://api.discogs.com/masters/90698",
+        "artists": [
+          {
+            "join": "",
+            "name": "Mojave 3",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/90236",
+            "id": 90236
+          }
+        ],
+        "id": 640256,
+        "thumb": "",
+        "title": "Ask Me Tomorrow",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/640256",
+        "master_id": 90698
+      },
+      "id": 640256,
+      "rating": 0
+    },
+    {
+      "instance_id": 260927951,
+      "date_added": "2017-11-13T06:53:16-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 512",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1985,
+        "master_url": "https://api.discogs.com/masters/7430",
+        "artists": [
+          {
+            "join": "",
+            "name": "Dead Can Dance",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12368",
+            "id": 12368
+          }
+        ],
+        "id": 66783,
+        "thumb": "",
+        "title": "Spleen And Ideal",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/66783",
+        "master_id": 7430
+      },
+      "id": 66783,
+      "rating": 3
+    },
+    {
+      "instance_id": 27868909,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 611",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1986,
+        "master_url": "https://api.discogs.com/masters/4496",
+        "artists": [
+          {
+            "join": "\u25aa",
+            "name": "Harold Budd",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/37749",
+            "id": 37749
+          },
+          {
+            "join": "\u25aa",
+            "name": "Elizabeth Fraser",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/65181",
+            "id": 65181
+          },
+          {
+            "join": "\u25aa",
+            "name": "Robin Guthrie",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/86533",
+            "id": 86533
+          },
+          {
+            "join": "",
+            "name": "Simon Raymonde",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/102834",
+            "id": 102834
+          }
+        ],
+        "id": 77098,
+        "thumb": "",
+        "title": "The Moon And The Melodies",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/77098",
+        "master_id": 4496
+      },
+      "id": 77098,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869738,
+      "date_added": "2009-12-11T13:57:30-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 803",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1988,
+        "master_url": "https://api.discogs.com/masters/16731",
+        "artists": [
+          {
+            "join": "",
+            "name": "Pixies",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/231577",
+            "id": 231577
+          }
+        ],
+        "id": 371355,
+        "thumb": "",
+        "title": "Surfer Rosa",
+        "formats": [
+          { "descriptions": ["LP", "Album"], "text": "Rough Cover", "name": "Vinyl", "qty": "1" }
+        ],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/371355",
+        "master_id": 16731
+      },
+      "id": 371355,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869190,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "cad 807",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1988,
+        "master_url": "https://api.discogs.com/masters/5040",
+        "artists": [
+          {
+            "join": "",
+            "name": "Cocteau Twins",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12373",
+            "id": 12373
+          }
+        ],
+        "id": 138276,
+        "thumb": "",
+        "title": "Blue Bell Knoll",
+        "formats": [
+          {
+            "descriptions": ["LP", "Album", "Limited Edition"],
+            "text": "Gatefold Sleeve",
+            "name": "Vinyl",
+            "qty": "1"
+          }
+        ],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/138276",
+        "master_id": 5040
+      },
+      "id": 138276,
+      "rating": 3
+    },
+    {
+      "instance_id": 27869772,
+      "date_added": "2009-12-11T13:58:48-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 905",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1989,
+        "master_url": "https://api.discogs.com/masters/16764",
+        "artists": [
+          {
+            "join": "",
+            "name": "Pixies",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/231577",
+            "id": 231577
+          }
+        ],
+        "id": 381224,
+        "thumb": "",
+        "title": "Doolittle",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/381224",
+        "master_id": 16764
+      },
+      "id": 381224,
+      "rating": 0
+    },
+    {
+      "instance_id": 27870097,
+      "date_added": "2009-12-12T23:34:06-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CT BOX 2",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2005,
+        "master_url": "https://api.discogs.com/masters/248413",
+        "artists": [
+          {
+            "join": "",
+            "name": "Cocteau Twins",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12373",
+            "id": 12373
+          }
+        ],
+        "id": 566530,
+        "thumb": "",
+        "title": "Lullabies To Violaine: Singles And Extended Plays 1982-1996",
+        "formats": [
+          {
+            "descriptions": ["Compilation", "Limited Edition", "Remastered"],
+            "name": "CD",
+            "qty": "4"
+          },
+          { "descriptions": ["Limited Edition"], "name": "Box Set", "qty": "1" }
+        ],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/566530",
+        "master_id": 248413
+      },
+      "id": 566530,
+      "rating": 4
+    },
+    {
+      "instance_id": 261973856,
+      "date_added": "2017-11-18T23:54:54-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "DAD 2303 CD",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2003,
+        "master_url": "https://api.discogs.com/masters/273506",
+        "artists": [
+          {
+            "join": "",
+            "name": "Dead Can Dance",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12368",
+            "id": 12368
+          }
+        ],
+        "id": 175055,
+        "thumb": "",
+        "title": "Wake",
+        "formats": [{ "descriptions": ["Compilation"], "name": "CD", "qty": "2" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/175055",
+        "master_id": 273506
+      },
+      "id": 175055,
+      "rating": 3
+    },
+    {
+      "instance_id": 27870362,
+      "date_added": "2013-03-28T01:21:16-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "GAD 0010 CD",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1998,
+        "master_url": "https://api.discogs.com/masters/16787",
+        "artists": [
+          {
+            "join": "",
+            "name": "Pixies",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/231577",
+            "id": 231577
+          }
+        ],
+        "id": 778266,
+        "thumb": "",
+        "title": "Bossanova",
+        "formats": [{ "descriptions": ["Album", "Reissue"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/778266",
+        "master_id": 16787
+      },
+      "id": 778266,
+      "rating": 0
+    },
+    {
+      "instance_id": 27870146,
+      "date_added": "2013-04-01T06:49:19-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "GAD 1014 CD",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1998,
+        "master_url": "https://api.discogs.com/masters/16797",
+        "artists": [
+          {
+            "join": "",
+            "name": "Pixies",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/231577",
+            "id": 231577
+          }
+        ],
+        "id": 610124,
+        "thumb": "",
+        "title": "Trompe Le Monde",
+        "formats": [{ "descriptions": ["Album", "Reissue"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/610124",
+        "master_id": 16797
+      },
+      "id": 610124,
+      "rating": 0
+    },
+    {
+      "instance_id": 27869739,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "MAD 709",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1987,
+        "master_url": "https://api.discogs.com/masters/16745",
+        "artists": [
+          {
+            "join": "",
+            "name": "Pixies",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/231577",
+            "id": 231577
+          }
+        ],
+        "id": 371392,
+        "thumb": "",
+        "title": "Come On Pilgrim",
+        "formats": [{ "descriptions": ["LP", "Mini-Album"], "name": "Vinyl", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/371392",
+        "master_id": 16745
+      },
+      "id": 371392,
+      "rating": 0
+    },
+    {
+      "instance_id": 201566220,
+      "date_added": "2016-12-09T23:28:03-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "TAD 2015 CD",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1992,
+        "master_url": null,
+        "artists": [
+          {
+            "join": "",
+            "name": "Swallow",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/92566",
+            "id": 92566
+          }
+        ],
+        "id": 224476,
+        "thumb": "",
+        "title": "Blowback",
+        "formats": [{ "descriptions": ["Album", "Limited Edition"], "name": "CD", "qty": "1" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/224476",
+        "master_id": 0
+      },
+      "id": 224476,
+      "rating": 3
+    },
+    {
+      "instance_id": 260920518,
+      "date_added": "2017-11-13T05:58:53-08:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 3614",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "652637361414",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 2016,
+        "master_url": "https://api.discogs.com/masters/982605",
+        "artists": [
+          {
+            "join": "",
+            "name": "Tim Hecker",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/59906",
+            "id": 59906
+          }
+        ],
+        "id": 8356975,
+        "thumb": "",
+        "title": "Love Streams",
+        "formats": [{ "descriptions": ["LP", "Album"], "name": "Vinyl", "qty": "2" }],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/8356975",
+        "master_id": 982605
+      },
+      "id": 8356975,
+      "rating": 3
+    },
+    {
+      "instance_id": 27870286,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CADD 3004",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "CAD 3004",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1993,
+        "master_url": "https://api.discogs.com/masters/32507",
+        "artists": [
+          {
+            "join": "",
+            "name": "Frank Black",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/22376",
+            "id": 22376
+          }
+        ],
+        "id": 718123,
+        "thumb": "",
+        "title": "Frank Black",
+        "formats": [
+          { "descriptions": ["LP", "Album", "Limited Edition"], "name": "Vinyl", "qty": "1" }
+        ],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/718123",
+        "master_id": 32507
+      },
+      "id": 718123,
+      "rating": 5
+    },
+    {
+      "instance_id": 27870065,
+      "date_added": "2009-08-20T00:00:00-07:00",
+      "basic_information": {
+        "labels": [
+          {
+            "name": "4AD",
+            "entity_type": "1",
+            "catno": "BAD 707",
+            "resource_url": "https://api.discogs.com/labels/634",
+            "id": 634,
+            "entity_type_name": "Label"
+          },
+          {
+            "name": "Blanco Y Negro (2)",
+            "entity_type": "1",
+            "catno": "MX - 191",
+            "resource_url": "https://api.discogs.com/labels/1967",
+            "id": 1967,
+            "entity_type_name": "Label"
+          }
+        ],
+        "year": 1987,
+        "master_url": "https://api.discogs.com/masters/67519",
+        "artists": [
+          {
+            "join": "",
+            "name": "M|A|R|R|S",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https://api.discogs.com/artists/12590",
+            "id": 12590
+          }
+        ],
+        "id": 545800,
+        "thumb": "",
+        "title": "Pump Up The Volume",
+        "formats": [
+          {
+            "descriptions": ["12\"", "45 RPM", "Single"],
+            "text": "Colour labels",
+            "name": "Vinyl",
+            "qty": "1"
+          }
+        ],
+        "cover_image": "",
+        "resource_url": "https://api.discogs.com/releases/545800",
+        "master_id": 67519
+      },
+      "id": 545800,
+      "rating": 0
+    }
+  ]
+}
