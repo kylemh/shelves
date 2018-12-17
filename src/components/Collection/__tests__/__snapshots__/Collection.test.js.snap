@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collection should render 1`] = `
+<article
+  className="Collection"
+>
+  <h4
+    className="title"
+  >
+    Cosmogramma
+  </h4>
+  <h5
+    className="artist"
+  >
+    by 
+    Flying Lotus
+  </h5>
+  <h5
+    className="year"
+  >
+    2010
+  </h5>
+</article>
+`;

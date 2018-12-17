@@ -41,6 +41,7 @@
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "jest-enzyme": "^7.0.1",
+    "jest-prop-type-error": "^1.1.0",
     "react-test-renderer": "^16.6.3"
   }
 }
