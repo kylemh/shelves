@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rack should render 1`] = `
+<section
+  className="Rack"
+>
+  <CollectionItem
+    id={3577040}
+    key="3577040"
+    primaryArtistName="Aphex Twin"
+    title="Selected Ambient Works Volume II"
+    year={2012}
+  />
+  <CollectionItem
+    id={3908906}
+    key="3908906"
+    primaryArtistName="Aphex Twin"
+    title="Richard D. James Album"
+    year={2012}
+  />
+  <CollectionItem
+    id={75994}
+    key="75994"
+    primaryArtistName="William Basinski"
+    title="The Disintegration Loops"
+    year={2002}
+  />
+  <CollectionItem
+    id={118447}
+    key="118447"
+    primaryArtistName="William Basinski"
+    title="The Disintegration Loops II"
+    year={0}
+  />
+  <CollectionItem
+    id={116400}
+    key="116400"
+    primaryArtistName="William Basinski"
+    title="Watermusic II"
+    year={2005}
+  />
+  <CollectionItem
+    id={265427}
+    key="265427"
+    primaryArtistName="William Basinski"
+    title="The Disintegration Loops III"
+    year={2003}
+  />
+  <CollectionItem
+    id={265430}
+    key="265430"
+    primaryArtistName="William Basinski"
+    title="The Disintegration Loops IV"
+    year={0}
+  />
+  <CollectionItem
+    id={1731724}
+    key="1731724"
+    primaryArtistName="William Basinski"
+    title="92982"
+    year={2009}
+  />
+  <CollectionItem
+    id={887797}
+    key="887797"
+    primaryArtistName="Barry White"
+    title="Best Of Barry White, Love Unlimited & Love Unlimited Orchestra"
+    year={0}
+  />
+  <CollectionItem
+    id={168870}
+    key="168870"
+    primaryArtistName="The Jonzun Crew"
+    title="Space Is The Place"
+    year={1983}
+  />
+  <CollectionItem
+    id={218611}
+    key="218611"
+    primaryArtistName="Greg Headley"
+    title="A Bulletin On Vertigo"
+    year={2003}
+  />
+  <CollectionItem
+    id={327021}
+    key="327021"
+    primaryArtistName="Greg Headley"
+    title="It Can Leave, It Must Leave"
+    year={2004}
+  />
+  <CollectionItem
+    id={433675}
+    key="433675"
+    primaryArtistName="The Mountain Goats"
+    title="Zopilote Machine"
+    year={2005}
+  />
+  <CollectionItem
+    id={3599617}
+    key="3599617"
+    primaryArtistName="JK Flesh"
+    title="Posthuman"
+    year={2012}
+  />
+  <CollectionItem
+    id={89566}
+    key="89566"
+    primaryArtistName="Bark Psychosis"
+    title="Independency"
+    year={1994}
+  />
+  <CollectionItem
+    id={338517}
+    key="338517"
+    primaryArtistName="Bark Psychosis"
+    title="Replay"
+    year={2004}
+  />
+  <CollectionItem
+    id={77658}
+    key="77658"
+    primaryArtistName="This Mortal Coil"
+    title="Sixteen Days - Gathering Dust"
+    year={1983}
+  />
+  <CollectionItem
+    id={93165}
+    key="93165"
+    primaryArtistName="Clan Of Xymox"
+    title="A Day"
+    year={1985}
+  />
+  <CollectionItem
+    id={549718}
+    key="549718"
+    primaryArtistName="Pixies"
+    title="Bossanova"
+    year={1990}
+  />
+  <CollectionItem
+    id={184990}
+    key="184990"
+    primaryArtistName="Cocteau Twins"
+    title="Heaven Or Las Vegas"
+    year={1990}
+  />
+  <CollectionItem
+    id={3179266}
+    key="3179266"
+    primaryArtistName="Pixies"
+    title="Trompe Le Monde"
+    year={1991}
+  />
+  <CollectionItem
+    id={396179}
+    key="396179"
+    primaryArtistName="The Breeders"
+    title="Last Splash"
+    year={1993}
+  />
+  <CollectionItem
+    id={7198443}
+    key="7198443"
+    primaryArtistName="Cocteau Twins"
+    title="The Pink Opaque"
+    year={2015}
+  />
+  <CollectionItem
+    id={66774}
+    key="66774"
+    primaryArtistName="Dead Can Dance"
+    title="Dead Can Dance"
+    year={1984}
+  />
+  <CollectionItem
+    id={63993}
+    key="63993"
+    primaryArtistName="Cocteau Twins"
+    title="Treasure"
+    year={1984}
+  />
+  <CollectionItem
+    id={640256}
+    key="640256"
+    primaryArtistName="Mojave 3"
+    title="Ask Me Tomorrow"
+    year={1995}
+  />
+  <CollectionItem
+    id={66783}
+    key="66783"
+    primaryArtistName="Dead Can Dance"
+    title="Spleen And Ideal"
+    year={1985}
+  />
+  <CollectionItem
+    id={77098}
+    key="77098"
+    primaryArtistName="Harold Budd"
+    title="The Moon And The Melodies"
+    year={1986}
+  />
+  <CollectionItem
+    id={371355}
+    key="371355"
+    primaryArtistName="Pixies"
+    title="Surfer Rosa"
+    year={1988}
+  />
+  <CollectionItem
+    id={138276}
+    key="138276"
+    primaryArtistName="Cocteau Twins"
+    title="Blue Bell Knoll"
+    year={1988}
+  />
+  <CollectionItem
+    id={381224}
+    key="381224"
+    primaryArtistName="Pixies"
+    title="Doolittle"
+    year={1989}
+  />
+  <CollectionItem
+    id={566530}
+    key="566530"
+    primaryArtistName="Cocteau Twins"
+    title="Lullabies To Violaine: Singles And Extended Plays 1982-1996"
+    year={2005}
+  />
+  <CollectionItem
+    id={175055}
+    key="175055"
+    primaryArtistName="Dead Can Dance"
+    title="Wake"
+    year={2003}
+  />
+  <CollectionItem
+    id={778266}
+    key="778266"
+    primaryArtistName="Pixies"
+    title="Bossanova"
+    year={1998}
+  />
+  <CollectionItem
+    id={610124}
+    key="610124"
+    primaryArtistName="Pixies"
+    title="Trompe Le Monde"
+    year={1998}
+  />
+  <CollectionItem
+    id={371392}
+    key="371392"
+    primaryArtistName="Pixies"
+    title="Come On Pilgrim"
+    year={1987}
+  />
+  <CollectionItem
+    id={224476}
+    key="224476"
+    primaryArtistName="Swallow"
+    title="Blowback"
+    year={1992}
+  />
+  <CollectionItem
+    id={8356975}
+    key="8356975"
+    primaryArtistName="Tim Hecker"
+    title="Love Streams"
+    year={2016}
+  />
+  <CollectionItem
+    id={718123}
+    key="718123"
+    primaryArtistName="Frank Black"
+    title="Frank Black"
+    year={1993}
+  />
+  <CollectionItem
+    id={545800}
+    key="545800"
+    primaryArtistName="M|A|R|R|S"
+    title="Pump Up The Volume"
+    year={1987}
+  />
+</section>
+`;

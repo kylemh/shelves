@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.Rack {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 250px;
+  width: 100vw;
+  padding: 1rem 0;
+  background-color: $feint;
+  border-bottom: 3px solid $gray;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
