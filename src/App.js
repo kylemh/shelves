@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { getReleasesFromUser } from './api/discogsAPI';
 import Header from './components/Header/Header';
 import Rack from './components/Rack/Rack';
+import transformReleaseData from './utils/transformReleaseData';
 import styles from './App.module.scss';
 
 class App extends Component {
@@ -11,7 +12,8 @@ class App extends Component {
 
   async componentDidMount() {
     const { pagination, releases } = await getReleasesFromUser();
-    this.setState({ collection: releases });
+    const parsedCollection = releases.map(release => transformReleaseData(release));
+    this.setState({ collection: parsedCollection });
   }
 
   render() {
