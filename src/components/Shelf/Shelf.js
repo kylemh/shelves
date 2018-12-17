@@ -21,7 +21,11 @@ class Shelf extends React.Component {
 
     return (
       <section className={styles.Shelf}>
-        <h2>Shelf</h2>
+        <div className={styles.container}>
+          <h3 className={styles.name}>{props.name}</h3>
+          <button className={styles.deleteButton} onClick={() => {}}>🗑</button>
+        </div>
+
         <div className={styles.itemsContainer}>
           {props.releases.map(release => (
               <ReleaseItem {...release} key={release.id} />

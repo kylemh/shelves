@@ -1,10 +1,38 @@
+// @import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
 .Shelf {
-  background-color: #222;
-  width: 90%;
+  background-color: $feint;
+  border-radius: 10px;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+.name {
+  width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deleteButton {
+  width: 50px;
 }
 
 .itemsContainer {
-  margin: 1rem auto;
-  overflow-x: scroll;
-  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 12rem;
+  padding: 1rem 0;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
