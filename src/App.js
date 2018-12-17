@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { getCollectionsFromUser } from './api/discogsAPI';
+import { getReleasesFromUser } from './api/discogsAPI';
 import Header from './components/Header/Header';
+import Rack from './components/Rack/Rack';
 import styles from './App.module.scss';
 
 class App extends Component {
@@ -9,16 +10,19 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const { pagination, releases } = await getCollectionsFromUser();
+    const { pagination, releases } = await getReleasesFromUser();
     console.log('pagination:\n', pagination);
     console.log('collections:\n', releases);
-    this.setState({ collections: releases });
+    this.setState({ collection: releases });
   }
 
   render() {
+    const { state } = this;
+
     return (
       <main className={styles.App}>
         <Header />
+        <Rack collections={state.collections} />
       </main>
     );
   }
