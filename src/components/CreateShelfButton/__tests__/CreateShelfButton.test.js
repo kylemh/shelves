@@ -16,5 +16,5 @@ describe('CreateShelfButton', () => {
     expect(createShelfFunction).toHaveBeenCalledTimes(0);
     wrapper.simulate('click');
     expect(createShelfFunction).toHaveBeenCalledTimes(1);
-  })
+  });
 });
