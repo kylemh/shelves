@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import { getReleasesFromUser } from './api/discogsAPI';
 import Header from './components/Header/Header';
 import Rack from './components/Rack/Rack';
+import Shelf from './components/Shelf/Shelf';
+import CreateShelfButton from './components/CreateShelfButton/CreateShelfButton';
 import transformReleaseData from './utils/transformReleaseData';
 import styles from './App.module.scss';
 
 class App extends Component {
   state = {
     collection: [],
+    shelves: [],
   };
 
   async componentDidMount() {
@@ -15,6 +18,15 @@ class App extends Component {
     const parsedCollection = releases.map(release => transformReleaseData(release));
     this.setState({ collection: parsedCollection });
   }
+
+  createShelf = () => {
+    const numberOfShelves = this.state.shelves.length;
+    const id = (Date.now().toString(36) + Math.random().toString(36).substr(2, 5));
+
+    this.setState(prevState => ({
+      shelves: [...prevState.shelves, { name: `New Shelf ${numberOfShelves + 1}`, id }],
+    }));
+  };
 
   render() {
     const { state } = this;
@@ -24,7 +36,10 @@ class App extends Component {
         <Header />
         <Rack collection={state.collection} />
         <div className={styles.container}>
-          <button style={{ width: '95vw', height: '200px' }}>Hello</button>
+          {state.shelves.map(shelf => (
+            <Shelf {...shelf} key={shelf.id} />
+          ))}
+          <CreateShelfButton createShelf={this.createShelf} />
         </div>
       </main>
     );
