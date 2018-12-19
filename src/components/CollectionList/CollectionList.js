@@ -12,7 +12,7 @@ export default class CollectionList extends React.Component {
       })
     ).isRequired,
     innerRef: PropTypes.func,
-    placeholder: PropTypes.string,
+    placeholder: PropTypes.element,
   };
 
   static defaultProps = {
