@@ -1,4 +1,4 @@
-import { transformReleaseData } from '../';
+import { transformReleaseData } from '..';
 import mockedReleases from '../../api/mocks/releases-0.json';
 import mockedSingleRelease from '../../api/mocks/single-release.json';
 import mockedSingleReleaseWithZeroYear from '../../api/mocks/single-release-with-0-year.json';

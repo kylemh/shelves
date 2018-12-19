@@ -1,4 +1,4 @@
-import { reorderList } from '../';
+import { reorderList } from '..';
 
 describe('reorderList', () => {
   const list = [1, 2, 3, 4, 5];
