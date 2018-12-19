@@ -4,22 +4,25 @@ exports[`Rack should render 1`] = `
 <section
   className="Rack"
 >
-  <ReleaseItem
+  <DraggableReleaseItem
     id={76035}
+    index={0}
     key="76035"
     primaryArtistName="Swayzak"
     title="Dirty Dancing"
     year={2002}
   />
-  <ReleaseItem
+  <DraggableReleaseItem
     id={198657}
+    index={1}
     key="198657"
     primaryArtistName="Jazkamer"
     title="Sound Of Music"
     year={2002}
   />
-  <ReleaseItem
+  <DraggableReleaseItem
     id={619145}
+    index={2}
     key="619145"
     primaryArtistName="Tiga"
     title="Sexor"
