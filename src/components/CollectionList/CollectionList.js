@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DraggableReleaseItem from '../ReleaseItem/DraggableReleaseItem';
 import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
-import styles from './Rack.module.scss';
+import styles from './CollectionList.module.scss';
 
-export default class Rack extends React.Component {
+export default class CollectionList extends React.Component {
   static propTypes = {
     collection: PropTypes.arrayOf(
       PropTypes.shape({
@@ -24,7 +24,7 @@ export default class Rack extends React.Component {
     const { collection, placeholder, innerRef, ...rest } = this.props;
 
     return (
-      <section className={styles.Rack} ref={innerRef} {...rest}>
+      <section className={styles.CollectionList} ref={innerRef} {...rest}>
         {collection.map((release, index) => (
           <DraggableReleaseItem
             index={index}

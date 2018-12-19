@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rack should render 1`] = `
+exports[`CollectionList should render 1`] = `
 <section
-  className="Rack"
+  className="CollectionList"
 >
   <DraggableReleaseItem
     id={76035}
