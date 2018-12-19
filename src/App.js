@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { DragDropContext } from 'react-beautiful-dnd';
 import { getReleasesFromUser } from './api/discogsAPI';
 import Header from './components/Header/Header';
-import Rack from './components/Rack/Rack';
+import DroppableRack from './components/Rack/DroppableRack';
 import Shelf from './components/Shelf/Shelf';
 import CreateShelfButton from './components/CreateShelfButton/CreateShelfButton';
 import { transformReleaseData } from './utils';
@@ -32,19 +33,27 @@ class App extends Component {
     }));
   };
 
+  onDragEnd = result => {
+    // TODO: Re-order column
+    // console.log('onDragEnd', result);
+  };
+
   render() {
     const { state } = this;
 
     return (
       <main>
         <Header />
-          <Rack collection={state.collection} />
-          <div className={styles.container}>
-            {state.shelves.map(shelf => (
-              <Shelf {...shelf} key={shelf.id} />
-            ))}
-            <CreateShelfButton createShelf={this.createShelf} />
-          </div>
+        <DragDropContext onDragEnd={this.onDragEnd}>
+          <DroppableRack collection={state.collection} />
+        </DragDropContext>
+
+        <div className={styles.container}>
+          {state.shelves.map(shelf => (
+            <Shelf {...shelf} key={shelf.id} />
+          ))}
+          <CreateShelfButton createShelf={this.createShelf} />
+        </div>
       </main>
     );
   }
