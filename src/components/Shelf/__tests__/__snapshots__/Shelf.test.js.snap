@@ -19,30 +19,30 @@ exports[`Shelf should render 1`] = `
       🗑
     </button>
   </div>
-  <div
-    className="itemsContainer"
-  >
-    <ReleaseItem
-      id={76035}
-      key="76035"
-      primaryArtistName="Swayzak"
-      title="Dirty Dancing"
-      year={2002}
-    />
-    <ReleaseItem
-      id={198657}
-      key="198657"
-      primaryArtistName="Jazkamer"
-      title="Sound Of Music"
-      year={2002}
-    />
-    <ReleaseItem
-      id={619145}
-      key="619145"
-      primaryArtistName="Tiga"
-      title="Sexor"
-      year={2006}
-    />
-  </div>
+  <DroppableCollectionList
+    collection={
+      Array [
+        Object {
+          "id": 76035,
+          "primaryArtistName": "Swayzak",
+          "title": "Dirty Dancing",
+          "year": 2002,
+        },
+        Object {
+          "id": 198657,
+          "primaryArtistName": "Jazkamer",
+          "title": "Sound Of Music",
+          "year": 2002,
+        },
+        Object {
+          "id": 619145,
+          "primaryArtistName": "Tiga",
+          "title": "Sexor",
+          "year": 2006,
+        },
+      ]
+    }
+    droppableId="some-super-duper-unique-id-123"
+  />
 </section>
 `;

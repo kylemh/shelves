@@ -9,7 +9,9 @@ const testData = mockedReleases.releases.slice(0, 3).map(release => transformRel
 
 describe('Shelf', () => {
   it('should render', () => {
-    const wrapper = shallow(<Shelf name="Test Shelf" releases={testData} />);
+    const wrapper = shallow(
+      <Shelf id="some-super-duper-unique-id-123" name="Test Shelf" releases={testData} />
+    );
 
     expect(wrapper).toMatchSnapshot();
   });
