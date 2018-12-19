@@ -22,6 +22,9 @@ class App extends Component {
 
   createShelf = () => {
     const numberOfShelves = this.state.shelves.length;
+
+    // Randomly generated ID devoid of conflicts
+    // Source: https://gist.github.com/gordonbrander/2230317
     const id =
       Date.now().toString(36) +
       Math.random()
@@ -47,14 +50,15 @@ class App extends Component {
 
         <DragDropContext onDragEnd={this.onDragEnd}>
           <DroppableCollectionList collection={state.collection} droppableId="initial-rack" />
-        </DragDropContext>
 
-        <div className={styles.container}>
-          {state.shelves.map(shelf => (
-            <Shelf {...shelf} key={shelf.id} />
-          ))}
-          <CreateShelfButton createShelf={this.createShelf} />
-        </div>
+          <div className={styles.container}>
+            {state.shelves.map(({ id, name, releases }) => (
+              <Shelf name={name} releases={releases} id={id} key={id} />
+            ))}
+
+            <CreateShelfButton createShelf={this.createShelf} />
+          </div>
+        </DragDropContext>
       </main>
     );
   }
