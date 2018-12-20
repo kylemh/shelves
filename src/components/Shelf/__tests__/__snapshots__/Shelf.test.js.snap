@@ -12,12 +12,14 @@ exports[`Shelf should render 1`] = `
     >
       Test Shelf
     </h3>
-    <button
-      className="deleteButton"
+    <DeleteShelfButton
       onClick={[Function]}
     >
+      <ScreenReaderOnly>
+        Delete Shelf
+      </ScreenReaderOnly>
       🗑
-    </button>
+    </DeleteShelfButton>
   </div>
   <DroppableCollectionList
     collection={

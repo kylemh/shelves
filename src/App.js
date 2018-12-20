@@ -42,6 +42,11 @@ class App extends Component {
     }));
   };
 
+  deleteShelf = shelfId => {
+    console.log(shelfId);
+    return;
+  };
+
   onDragEnd = result => {
     const { collection, shelves } = this.state;
     const { destination, source, draggableId } = result;
@@ -170,7 +175,15 @@ class App extends Component {
             {Object.keys(state.shelves).map(shelfID => {
               const { name, releases } = state.shelves[shelfID];
 
-              return <Shelf name={name} releases={releases} id={shelfID} key={shelfID} />;
+              return (
+                <Shelf
+                  name={name}
+                  releases={releases}
+                  id={shelfID}
+                  key={shelfID}
+                  deleteShelf={this.deleteShelf}
+                />
+              );
             })}
 
             <CreateShelfButton createShelf={this.createShelf} />
