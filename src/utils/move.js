@@ -2,12 +2,13 @@
  * @description
  * @param {[]} sourceItems
  * @param {[]} destinationItems
- * @param {*} source
- * @param {*} destination
+ * @param {{ droppableId: string, index: NumberConstructor }} source
+ * @param {{ droppableId: string, index: NumberConstructor }} destination
  * @exports
  * @returns
  */
 function move(sourceItems, destinationItems, source, destination) {
+  debugger;
   const sourceItemsClone = Array.from(sourceItems);
   const destinationItemsClone = Array.from(destinationItems);
   const [removed] = sourceItemsClone.splice(source.index, 1);
