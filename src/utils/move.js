@@ -8,7 +8,6 @@
  * @returns
  */
 function move(sourceItems, destinationItems, source, destination) {
-  debugger;
   const sourceItemsClone = Array.from(sourceItems);
   const destinationItemsClone = Array.from(destinationItems);
   const [removed] = sourceItemsClone.splice(source.index, 1);
