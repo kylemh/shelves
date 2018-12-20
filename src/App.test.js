@@ -6,12 +6,12 @@ import mockedDiscogsAPIResponse from './api/mocks/releases-0.json';
 import wait from './utils/test-utils/wait';
 import App from './App';
 
-const mountAndWait = async (component) => {
+const mountAndWait = async component => {
   const wrapper = mount(component);
   await wait();
 
   return wrapper;
-}
+};
 
 // onGet('/users/blacklight/collection/folders/0/releases')
 beforeEach(async () => {
@@ -32,7 +32,6 @@ describe('App', () => {
   });
 
   it('should create a new shelf when the "Create New Shelf" button is clicked', async () => {
-
     const wrapper = await mountAndWait(<App />);
 
     expect(wrapper.find('Shelf').exists()).not.toBeTruthy();
@@ -43,5 +42,25 @@ describe('App', () => {
       .simulate('click');
 
     expect(wrapper.find('Shelf').exists()).toBeTruthy();
+  });
+
+  it('should delete a new shelf when the "Delete" button is clicked', async () => {
+    const wrapper = await mountAndWait(<App />);
+
+    expect(wrapper.find('Shelf').exists()).not.toBeTruthy();
+
+    wrapper
+      .find('button')
+      .filterWhere(n => n.text().includes('Create New Shelf'))
+      .simulate('click');
+
+    expect(wrapper.find('Shelf').exists()).toBeTruthy();
+
+    wrapper
+      .find('button')
+      .filterWhere(n => n.text().includes('Delete Shelf'))
+      .simulate('click');
+
+    expect(wrapper.find('Shelf').exists()).not.toBeTruthy();
   });
 });

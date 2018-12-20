@@ -42,9 +42,23 @@ class App extends Component {
     }));
   };
 
+  /**
+   * @description Remove shelf and contained release items to the beginning of the rack
+   */
   deleteShelf = shelfId => {
-    console.log(shelfId);
-    return;
+    const { collection, shelves } = this.state;
+
+    const updatedCollectionItems = [...shelves[shelfId].releases, ...collection];
+
+    this.setState(prevState => {
+      const updatedShelves = prevState.shelves;
+      delete updatedShelves[shelfId];
+
+      return {
+        collection: updatedCollectionItems,
+        shelves: updatedShelves,
+      };
+    });
   };
 
   onDragEnd = result => {
