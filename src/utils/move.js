@@ -1,24 +1,25 @@
 /**
  * @description
- * @param {[]} source
- * @param {[]} destination
- * @param {*} droppableSource
- * @param {*} droppableDestination
+ * @param {[]} sourceItems
+ * @param {[]} destinationItems
+ * @param {*} source
+ * @param {*} destination
  * @exports
  * @returns
  */
-function move(source, destination, droppableSource, droppableDestination) {
-  const sourceClone = Array.from(source);
-  const destClone = Array.from(destination);
-  const [removed] = sourceClone.splice(droppableSource.index, 1);
+function move(sourceItems, destinationItems, source, destination) {
+  const sourceItemsClone = Array.from(sourceItems);
+  const destinationItemsClone = Array.from(destinationItems);
+  const [removed] = sourceItemsClone.splice(source.index, 1);
 
-  destClone.splice(droppableDestination.index, 0, removed);
+  destinationItemsClone.splice(destination.index, 0, removed);
 
-  const result = {};
-  result[droppableSource.droppableId] = sourceClone;
-  result[droppableDestination.droppableId] = destClone;
+  const result = [
+    sourceItemsClone,
+    destinationItemsClone,
+  ];
 
   return result;
-};
+}
 
 export default move;

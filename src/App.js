@@ -11,7 +11,7 @@ import styles from './App.module.scss';
 class App extends Component {
   state = {
     collection: [],
-    shelves: [],
+    shelves: {},
   };
 
   async componentDidMount() {
@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   createShelf = () => {
-    const numberOfShelves = this.state.shelves.length;
+    const numberOfShelves = Object.keys(this.state.shelves).length;
 
     // Randomly generated ID devoid of conflicts
     // Source: https://gist.github.com/gordonbrander/2230317
@@ -32,7 +32,13 @@ class App extends Component {
         .substr(2, 5);
 
     this.setState(prevState => ({
-      shelves: [...prevState.shelves, { name: `New Shelf ${numberOfShelves + 1}`, id }],
+      shelves: {
+        ...prevState.shelves,
+        [id]: {
+          name: `New Shelf ${numberOfShelves + 1}`,
+          releases: [],
+        },
+      },
     }));
   };
 
@@ -45,28 +51,109 @@ class App extends Component {
       return;
     }
 
-    const movedWithinSameCollectionList = destination.droppableId === source.droppableId
+    const isMovedInSameList = destination.droppableId === source.droppableId;
 
     // Dnd an item onto it's original location
-    if (movedWithinSameCollectionList && destination.index === source.index) {
+    if (isMovedInSameList && destination.index === source.index) {
       return;
     }
 
-    const fromRack = source.droppableId === 'initial-rack';
-    // const toRack = destination.droppableId === 'initial-rack';
+    const initialIndex = source.index;
+    const targetIndex = destination.index;
+    const droppableRackID = 'initial-rack';
+    const isFromRack = source.droppableId === droppableRackID;
 
-    if (movedWithinSameCollectionList) {
-      const initialIndex = source.index;
-      const targetIndex = destination.index;
-
-      if (fromRack) {
+    if (isMovedInSameList) {
+      if (isFromRack) {
         const newState = reorderList(collection, initialIndex, targetIndex);
         this.setState({ collection: newState });
+        return;
       }
+
+      const reorderedShelfItems = reorderList(
+        shelves[source.droppableId].releases,
+        initialIndex,
+        targetIndex
+      );
+
+      this.setState(prevState => ({
+        shelves: {
+          ...prevState.shelves,
+          [source.droppableId]: {
+            ...prevState.shelves[source.droppableId],
+            releases: reorderedShelfItems,
+          },
+        },
+      }));
+      return;
     }
 
+    // Moved from the rack to a shelf
+    if (isFromRack) {
+      const [updatedCollectionItems, updatedShelfItems] = move(
+        collection,
+        shelves[destination.droppableId].releases,
+        source,
+        destination
+      );
 
+      this.setState(prevState => ({
+        collection: updatedCollectionItems,
+        shelves: {
+          ...prevState.shelves,
+          [destination.droppableId]: {
+            ...prevState.shelves[destination.droppableId],
+            releases: updatedShelfItems,
+          },
+        },
+      }));
+      return;
+    }
 
+    // Moved from a shelf to the rack
+    if (destination.droppableId === droppableRackID) {
+      const [updatedShelfItems, updatedCollectionItems] = move(
+        shelves[source.droppableId].releases,
+        collection,
+        source,
+        destination
+      );
+
+      this.setState(prevState => ({
+        collection: updatedCollectionItems,
+        shelves: {
+          ...prevState.shelves,
+          [source.droppableId]: {
+            ...prevState.shelves[source.droppableId],
+            releases: updatedShelfItems,
+          },
+        },
+      }));
+      return;
+    }
+
+    // Moved between shelves
+    const [updatedSourceShelf, updatedDestinationShelf] = move(
+      shelves[source.droppableId].releases,
+      shelves[destination.droppableId].releases,
+      source,
+      destination
+    );
+
+    this.setState(prevState => ({
+      shelves: {
+        ...prevState.shelves,
+        [source.droppableId]: {
+          ...prevState.shelves[source.droppableId],
+          releases: updatedSourceShelf,
+        },
+        [destination.droppableId]: {
+          ...prevState.shelves[destination.droppableId],
+          releases: updatedDestinationShelf,
+        },
+      },
+    }));
+    return;
   };
 
   render() {
@@ -80,9 +167,11 @@ class App extends Component {
           <DroppableCollectionList collection={state.collection} droppableId="initial-rack" />
 
           <div className={styles.container}>
-            {state.shelves.map(({ id, name, releases }) => (
-              <Shelf name={name} releases={releases} id={id} key={id} />
-            ))}
+            {Object.keys(state.shelves).map(shelfID => {
+              const { name, releases } = state.shelves[shelfID];
+
+              return <Shelf name={name} releases={releases} id={shelfID} key={shelfID} />;
+            })}
 
             <CreateShelfButton createShelf={this.createShelf} />
           </div>
