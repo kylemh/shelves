@@ -2,8 +2,8 @@
  * @description
  * @param {[]} sourceItems
  * @param {[]} destinationItems
- * @param {{ droppableId: string, index: NumberConstructor }} source
- * @param {{ droppableId: string, index: NumberConstructor }} destination
+ * @param {{ droppableId: string, index: number }} source
+ * @param {{ droppableId: string, index: number }} destination
  * @exports
  * @returns
  */
