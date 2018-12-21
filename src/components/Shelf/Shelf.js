@@ -28,7 +28,7 @@ class Shelf extends React.Component {
   }
 
   render() {
-    const { deleteShelf, id, name, releases } = this.props;
+    const { id, name, releases } = this.props;
 
     return (
       <section className={styles.Shelf}>
