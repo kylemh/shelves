@@ -143,30 +143,30 @@ class App extends Component {
         }));
         return;
       }
+
+      // Moved between shelves
+      const [updatedSourceShelfItems, updatedDestinationShelfItems] = move(
+        shelves[source.droppableId].releases,
+        shelves[destination.droppableId].releases,
+        source,
+        destination
+      );
+
+      this.setState(prevState => ({
+        shelves: {
+          ...prevState.shelves,
+          [source.droppableId]: {
+            ...prevState.shelves[source.droppableId],
+            releases: updatedSourceShelfItems,
+          },
+          [destination.droppableId]: {
+            ...prevState.shelves[destination.droppableId],
+            releases: updatedDestinationShelfItems,
+          },
+        },
+      }));
+      return;
     }
-
-    // Moved between shelves
-    const [updatedSourceShelfItems, updatedDestinationShelfItems] = move(
-      shelves[source.droppableId].releases,
-      shelves[destination.droppableId].releases,
-      source,
-      destination
-    );
-
-    this.setState(prevState => ({
-      shelves: {
-        ...prevState.shelves,
-        [source.droppableId]: {
-          ...prevState.shelves[source.droppableId],
-          releases: updatedSourceShelfItems,
-        },
-        [destination.droppableId]: {
-          ...prevState.shelves[destination.droppableId],
-          releases: updatedDestinationShelfItems,
-        },
-      },
-    }));
-    return;
   };
 
   render() {
