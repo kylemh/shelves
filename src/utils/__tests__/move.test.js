@@ -1,4 +1,4 @@
-import move from '../move';
+import { move } from '..';
 
 describe('move', () => {
   it('should move an item in a filled array to an empty array', () => {
@@ -7,7 +7,12 @@ describe('move', () => {
     const source = { droppableId: 'source-id', index: 3 };
     const destination = { droppableId: 'destination-id', index: 0 };
 
-    const [ newSourceList, newDestinationList ] = move(sourceList, destinationList, source, destination);
+    const [newSourceList, newDestinationList] = move(
+      sourceList,
+      destinationList,
+      source,
+      destination
+    );
     expect(newSourceList).toStrictEqual([1, 2, 3, 5]);
     expect(newDestinationList).toStrictEqual([4]);
   });
@@ -18,7 +23,12 @@ describe('move', () => {
     const source = { droppableId: 'flintstones', index: 2 };
     const destination = { droppableId: 'scooby doo', index: 2 };
 
-    const [ newSourceList, newDestinationList ] = move(sourceList, destinationList, source, destination);
+    const [newSourceList, newDestinationList] = move(
+      sourceList,
+      destinationList,
+      source,
+      destination
+    );
     expect(newSourceList).toStrictEqual(['yabba', 'dabba']);
     expect(newDestinationList).toStrictEqual(['scooby', 'dooby', 'doo']);
   });

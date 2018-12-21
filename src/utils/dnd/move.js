@@ -1,10 +1,10 @@
 /**
  * @description
+ * @exports
  * @param {[]} sourceItems
  * @param {[]} destinationItems
  * @param {{ droppableId: string, index: number }} source
  * @param {{ droppableId: string, index: number }} destination
- * @exports
  * @returns
  */
 function move(sourceItems, destinationItems, source, destination) {
@@ -14,10 +14,7 @@ function move(sourceItems, destinationItems, source, destination) {
 
   destinationItemsClone.splice(destination.index, 0, removed);
 
-  const result = [
-    sourceItemsClone,
-    destinationItemsClone,
-  ];
+  const result = [sourceItemsClone, destinationItemsClone];
 
   return result;
 }

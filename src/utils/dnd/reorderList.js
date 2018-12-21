@@ -1,9 +1,9 @@
 /**
  * @description Moves an item existing in a list at "initialIndex" and moves it to "targetIndex"
+ * @exports
  * @param {[]} list
  * @param {number} initialIndex
  * @param {number} targetIndex
- * @exports
  * @returns {[]} result
  */
 function reorderList(list, initialIndex, targetIndex) {
@@ -15,7 +15,9 @@ function reorderList(list, initialIndex, targetIndex) {
     return result;
   }
 
-  throw new Error('initialIndex and targetIndex are required parameters. Pass a positive number to each!');
+  throw new Error(
+    'initialIndex and targetIndex are required parameters. Pass a positive number to each!'
+  );
 }
 
 export default reorderList;

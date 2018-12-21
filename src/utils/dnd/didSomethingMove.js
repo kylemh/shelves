@@ -1,5 +1,6 @@
 /**
  * @description used within onDragEnd to determine if an item's source differs from its destination
+ * @exports
  * @param {{ droppableId: string, index: number }} source
  * @param {{ droppableId: string, index: number }} destination
  * @returns {boolean}

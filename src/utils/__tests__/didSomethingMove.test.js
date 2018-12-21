@@ -1,10 +1,10 @@
-import didSomethingMove from '../didSomethingMove';
+import { didSomethingMove } from '..';
 
 describe('didSomethingMove', () => {
   it('should return false if no destination is passed', () => {
     const source = { droppableId: 'source-id', index: 3 };
 
-    const result = didSomethingMove(source, {});
+    const result = didSomethingMove(source, undefined);
     expect(result).toStrictEqual(false);
   });
 

@@ -5,9 +5,8 @@ import Header from './components/Header/Header';
 import DroppableCollectionList from './components/CollectionList/DroppableCollectionList';
 import Shelf from './components/Shelf/Shelf';
 import CreateShelfButton from './components/CreateShelfButton/CreateShelfButton';
-import { reorderList, move, transformReleaseData } from './utils';
+import { didSomethingMove, move, reorderList, transformReleaseData } from './utils';
 import styles from './App.module.scss';
-import didSomethingMove from './utils/didSomethingMove';
 
 class App extends Component {
   state = {
