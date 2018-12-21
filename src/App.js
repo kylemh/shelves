@@ -63,7 +63,7 @@ class App extends Component {
 
   onDragEnd = result => {
     const { collection, shelves } = this.state;
-    const { destination, source, draggableId } = result;
+    const { destination, source } = result;
 
     // Dropped outside of a droppable location
     if (!destination) {
