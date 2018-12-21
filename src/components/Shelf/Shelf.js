@@ -41,7 +41,7 @@ class Shelf extends React.Component {
           </DeleteShelfButton>
         </div>
 
-        <DroppableReleasesList collection={releases} droppableId={id} />
+        <DroppableReleasesList releases={releases} droppableId={id} />
       </section>
     );
   }

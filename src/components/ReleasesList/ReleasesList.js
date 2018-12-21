@@ -6,7 +6,7 @@ import styles from './ReleasesList.module.scss';
 
 export default class ReleasesList extends React.Component {
   static propTypes = {
-    collection: PropTypes.arrayOf(
+    releases: PropTypes.arrayOf(
       PropTypes.shape({
         ...ReleaseItemPropTypes,
       })
@@ -21,11 +21,11 @@ export default class ReleasesList extends React.Component {
   };
 
   render() {
-    const { collection, placeholder, innerRef, ...rest } = this.props;
+    const { releases, placeholder, innerRef, ...rest } = this.props;
 
     return (
       <section className={styles.ReleasesList} ref={innerRef} {...rest}>
-        {collection.map((release, index) => (
+        {releases.map((release, index) => (
           <DraggableReleaseItem
             index={index}
             key={release.id}

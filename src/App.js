@@ -10,14 +10,14 @@ import styles from './App.module.scss';
 
 class App extends Component {
   state = {
-    collection: [],
+    rack: [],
     shelves: {},
   };
 
   async componentDidMount() {
     const { pagination, releases } = await getReleasesFromUser();
-    const parsedCollection = releases.map(release => transformReleaseData(release));
-    this.setState({ collection: parsedCollection });
+    const rack = releases.map(release => transformReleaseData(release));
+    this.setState({ rack });
   }
 
   createShelf = () => {
@@ -47,16 +47,16 @@ class App extends Component {
    * @param {string} shelfId
    */
   deleteShelf = shelfId => {
-    const { collection, shelves } = this.state;
+    const { rack, shelves } = this.state;
 
-    const updatedCollectionItems = [...shelves[shelfId].releases, ...collection];
+    const updatedRack = [...shelves[shelfId].releases, ...rack];
 
     this.setState(prevState => {
       const updatedShelves = prevState.shelves;
       delete updatedShelves[shelfId];
 
       return {
-        collection: updatedCollectionItems,
+        rack: updatedRack,
         shelves: updatedShelves,
       };
     });
@@ -69,7 +69,7 @@ class App extends Component {
    * @param {{ droppableId: string, index: number }} result.destination
    */
   onDragEnd = result => {
-    const { collection, shelves } = this.state;
+    const { rack, shelves } = this.state;
     const { source, destination } = result;
 
     if (didSomethingMove(source, destination)) {
@@ -79,7 +79,7 @@ class App extends Component {
       // Moved within same droppable
       if (destination.droppableId === source.droppableId) {
         if (isFromRack) {
-          this.setState({ collection: reorderList(collection, source.index, destination.index) });
+          this.setState({ rack: reorderList(rack, source.index, destination.index) });
           return;
         }
 
@@ -102,15 +102,15 @@ class App extends Component {
 
       // Moved from the rack to a shelf
       if (isFromRack) {
-        const [updatedCollectionItems, updatedShelfItems] = move(
-          collection,
+        const [updatedRackItems, updatedShelfItems] = move(
+          rack,
           shelves[destination.droppableId].releases,
           source,
           destination
         );
 
         this.setState(prevState => ({
-          collection: updatedCollectionItems,
+          rack: updatedRackItems,
           shelves: {
             ...prevState.shelves,
             [destination.droppableId]: {
@@ -124,15 +124,15 @@ class App extends Component {
 
       // Moved from a shelf to the rack
       if (destination.droppableId === droppableRackID) {
-        const [updatedShelfItems, updatedCollectionItems] = move(
+        const [updatedShelfItems, updatedRackItems] = move(
           shelves[source.droppableId].releases,
-          collection,
+          rack,
           source,
           destination
         );
 
         this.setState(prevState => ({
-          collection: updatedCollectionItems,
+          rack: updatedRackItems,
           shelves: {
             ...prevState.shelves,
             [source.droppableId]: {
@@ -177,7 +177,7 @@ class App extends Component {
         <Header />
 
         <DragDropContext onDragEnd={this.onDragEnd}>
-          <DroppableReleasesList collection={state.collection} droppableId="initial-rack" />
+          <DroppableReleasesList releases={state.rack} droppableId="initial-rack" />
 
           <div className={styles.container}>
             {Object.keys(state.shelves).map(shelfID => {

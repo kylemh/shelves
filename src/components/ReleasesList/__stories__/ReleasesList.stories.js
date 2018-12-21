@@ -16,7 +16,7 @@ storiesOf('ReleasesList', module)
   .add('default', () => (
     <DragDropContext onDragEnd={() => {}}>
       <DroppableReleasesList
-        collection={storyData}
+        releases={storyData}
         droppableId={text('droppableId', 'this-must-be-unique-within-context')}
       />
     </DragDropContext>

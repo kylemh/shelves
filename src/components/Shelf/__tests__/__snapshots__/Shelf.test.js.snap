@@ -22,7 +22,8 @@ exports[`Shelf should render 1`] = `
     </DeleteShelfButton>
   </div>
   <DroppableReleasesList
-    collection={
+    droppableId="some-super-duper-unique-id-123"
+    releases={
       Array [
         Object {
           "id": 76035,
@@ -44,7 +45,6 @@ exports[`Shelf should render 1`] = `
         },
       ]
     }
-    droppableId="some-super-duper-unique-id-123"
   />
 </section>
 `;

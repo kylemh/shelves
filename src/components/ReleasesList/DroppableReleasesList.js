@@ -6,7 +6,7 @@ import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
 
 export default class DroppableReleasesList extends React.Component {
   static propTypes = {
-    collection: PropTypes.arrayOf(
+    releases: PropTypes.arrayOf(
       PropTypes.shape({
         ...ReleaseItemPropTypes,
       })
@@ -15,13 +15,13 @@ export default class DroppableReleasesList extends React.Component {
   };
 
   render() {
-    const { collection, droppableId } = this.props;
+    const { releases, droppableId } = this.props;
 
     return (
       <Droppable droppableId={droppableId} direction="horizontal">
         {provided => (
           <ReleasesList
-            collection={collection}
+            releases={releases}
             innerRef={provided.innerRef}
             placeholder={provided.placeholder}
             {...provided.droppableProps}
