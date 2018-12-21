@@ -20,17 +20,21 @@ export default class ReleasesList extends React.Component {
     placeholder: undefined,
   };
 
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.releases === this.props.releases) {
+      return false;
+    }
+
+    return true;
+  }
+
   render() {
     const { releases, placeholder, innerRef, ...rest } = this.props;
 
     return (
       <section className={styles.ReleasesList} ref={innerRef} {...rest}>
         {releases.map((release, index) => (
-          <DraggableReleaseItem
-            index={index}
-            key={release.id}
-            {...release}
-          />
+          <DraggableReleaseItem index={index} key={release.id} {...release} />
         ))}
         {placeholder}
       </section>

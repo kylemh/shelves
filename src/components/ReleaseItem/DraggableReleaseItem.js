@@ -11,6 +11,14 @@ export default class DraggableReleaseItem extends React.Component {
     index: PropTypes.number.isRequired,
   };
 
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.index === this.props.index) {
+      return false;
+    }
+
+    return true;
+  }
+
   render() {
     const { id, index, primaryArtistName, title, year } = this.props;
 

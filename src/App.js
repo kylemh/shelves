@@ -49,6 +49,17 @@ class App extends Component {
   deleteShelf = shelfId => {
     const { rack, shelves } = this.state;
 
+    // prevent re-render of rack if no items on shelf
+    if (shelves[shelfId].releases.length === 0) {
+      this.setState(prevState => {
+        const updatedShelves = prevState.shelves;
+        delete updatedShelves[shelfId];
+
+        return { shelves: updatedShelves };
+      });
+      return;
+    }
+
     const updatedRack = [...shelves[shelfId].releases, ...rack];
 
     this.setState(prevState => {
