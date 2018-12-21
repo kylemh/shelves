@@ -44,6 +44,7 @@ class App extends Component {
 
   /**
    * @description Remove shelf and contained release items to the beginning of the rack
+   * @param {string} shelfId
    */
   deleteShelf = shelfId => {
     const { collection, shelves } = this.state;
@@ -61,36 +62,38 @@ class App extends Component {
     });
   };
 
+  /**
+   * @description Series of conditional setStates to keep order within every draggable list
+   * @param {object} result
+   * @param {{ droppableId: string, index: number }} result.source
+   * @param {{ droppableId: string, index: number }} result.destination
+   */
   onDragEnd = result => {
     const { collection, shelves } = this.state;
     const { source, destination } = result;
 
     if (didSomethingMove(source, destination)) {
-      const initialIndex = source.index;
-      const targetIndex = destination.index;
       const droppableRackID = 'initial-rack';
       const isFromRack = source.droppableId === droppableRackID;
 
       // Moved within same droppable
       if (destination.droppableId === source.droppableId) {
         if (isFromRack) {
-          const newState = reorderList(collection, initialIndex, targetIndex);
-          this.setState({ collection: newState });
+          this.setState({ collection: reorderList(collection, source.index, destination.index) });
           return;
         }
 
-        const reorderedShelfItems = reorderList(
-          shelves[source.droppableId].releases,
-          initialIndex,
-          targetIndex
-        );
-
+        // isFromShelf
         this.setState(prevState => ({
           shelves: {
             ...prevState.shelves,
             [source.droppableId]: {
               ...prevState.shelves[source.droppableId],
-              releases: reorderedShelfItems,
+              releases: reorderList(
+                shelves[source.droppableId].releases,
+                source.index,
+                destination.index
+              ),
             },
           },
         }));
@@ -143,7 +146,7 @@ class App extends Component {
     }
 
     // Moved between shelves
-    const [updatedSourceShelf, updatedDestinationShelf] = move(
+    const [updatedSourceShelfItems, updatedDestinationShelfItems] = move(
       shelves[source.droppableId].releases,
       shelves[destination.droppableId].releases,
       source,
@@ -155,11 +158,11 @@ class App extends Component {
         ...prevState.shelves,
         [source.droppableId]: {
           ...prevState.shelves[source.droppableId],
-          releases: updatedSourceShelf,
+          releases: updatedSourceShelfItems,
         },
         [destination.droppableId]: {
           ...prevState.shelves[destination.droppableId],
-          releases: updatedDestinationShelf,
+          releases: updatedDestinationShelfItems,
         },
       },
     }));
