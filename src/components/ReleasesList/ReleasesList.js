@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DraggableReleaseItem from '../ReleaseItem/DraggableReleaseItem';
 import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
-import styles from './CollectionList.module.scss';
+import styles from './ReleasesList.module.scss';
 
-export default class CollectionList extends React.Component {
+export default class ReleasesList extends React.Component {
   static propTypes = {
     collection: PropTypes.arrayOf(
       PropTypes.shape({
@@ -24,7 +24,7 @@ export default class CollectionList extends React.Component {
     const { collection, placeholder, innerRef, ...rest } = this.props;
 
     return (
-      <section className={styles.CollectionList} ref={innerRef} {...rest}>
+      <section className={styles.ReleasesList} ref={innerRef} {...rest}>
         {collection.map((release, index) => (
           <DraggableReleaseItem
             index={index}

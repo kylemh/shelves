@@ -21,7 +21,7 @@ exports[`Shelf should render 1`] = `
       🗑
     </DeleteShelfButton>
   </div>
-  <DroppableCollectionList
+  <DroppableReleasesList
     collection={
       Array [
         Object {

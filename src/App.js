@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { getReleasesFromUser } from './api/discogsAPI';
 import Header from './components/Header/Header';
-import DroppableCollectionList from './components/CollectionList/DroppableCollectionList';
+import DroppableReleasesList from './components/ReleasesList/DroppableReleasesList';
 import Shelf from './components/Shelf/Shelf';
 import CreateShelfButton from './components/CreateShelfButton/CreateShelfButton';
 import { didSomethingMove, move, reorderList, transformReleaseData } from './utils';
@@ -177,7 +177,7 @@ class App extends Component {
         <Header />
 
         <DragDropContext onDragEnd={this.onDragEnd}>
-          <DroppableCollectionList collection={state.collection} droppableId="initial-rack" />
+          <DroppableReleasesList collection={state.collection} droppableId="initial-rack" />
 
           <div className={styles.container}>
             {Object.keys(state.shelves).map(shelfID => {

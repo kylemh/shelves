@@ -3,13 +3,13 @@ import { shallow } from 'enzyme';
 
 import transformReleaseData from '../../../utils/transformReleaseData';
 import mockedReleases from '../../../api/mocks/releases-0.json';
-import CollectionList from '../CollectionList';
+import ReleasesList from '../ReleasesList';
 
 const testData = mockedReleases.releases.slice(0, 3).map(release => transformReleaseData(release));
 
-describe('CollectionList', () => {
+describe('ReleasesList', () => {
   it('should render', () => {
-    const wrapper = shallow(<CollectionList collection={testData} />);
+    const wrapper = shallow(<ReleasesList collection={testData} />);
 
     expect(wrapper).toMatchSnapshot();
   });

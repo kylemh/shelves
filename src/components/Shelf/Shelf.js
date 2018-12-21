@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DeleteShelfButton from './DeleteShelfButton/DeleteShelfButton';
-import DroppableCollectionList from '../CollectionList/DroppableCollectionList';
+import DroppableReleasesList from '../ReleasesList/DroppableReleasesList';
 import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
 import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 import styles from './Shelf.module.scss';
@@ -41,7 +41,7 @@ class Shelf extends React.Component {
           </DeleteShelfButton>
         </div>
 
-        <DroppableCollectionList collection={releases} droppableId={id} />
+        <DroppableReleasesList collection={releases} droppableId={id} />
       </section>
     );
   }
