@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: $white;
+  font-family: $primaryFont;
+  font-weight: bold;
+  font-size: 1rem;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 0.35rem;
+  white-space: nowrap;
+  transition:
+    $animationDuration $animationTiming background-color,
+    $animationDuration $animationTiming color;
+
+  &:disabled {
+    opacity: 0.6;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.primary {
+  background-color: rgba(0, 0, 0, 0);
+  color: $primary;
+  fill: $primary;
+  border-color: $primary;
+  outline-color: $primary;
+
+  &:focus:enabled,
+  &:hover:enabled {
+    background-color: $primary;
+    color: $white;
+    fill: $white;
+    outline-color: $white;
+  }
+}
+
+.secondary {
+  background-color: rgba(0, 0, 0, 0);
+  color: $secondary;
+  fill: $secondary;
+  border-color: $secondary;
+
+  &:focus:enabled,
+  &:hover:enabled {
+    background-color: $secondary;
+    color: $white;
+    fill: $white;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
