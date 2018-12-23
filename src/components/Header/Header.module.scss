@@ -3,15 +3,14 @@
 .Header {
   position: static;
   width: 100vw;
-  height: 50px;
+  height: 70px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: $feint;
   border-bottom: 3px solid $gray;
-}
 
-.logo {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 2rem;
+  & > * {
+    margin: 0 2rem;
+  }
 }

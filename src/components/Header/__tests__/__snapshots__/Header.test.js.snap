@@ -9,5 +9,15 @@ exports[`Header should render 1`] = `
   >
     Shelf
   </h1>
+  <Button
+    disabled={false}
+    fullWidth={false}
+    onClick={[MockFunction]}
+    tabIndex={0}
+    theme="primary"
+    type="button"
+  >
+    Create Shelf
+  </Button>
 </header>
 `;

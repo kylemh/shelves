@@ -8,4 +8,13 @@ describe('Header', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should fire callback when button is clicked', () => {
+    const mockedCallback = jest.fn();
+    const wrapper = shallow(<Header createShelf={mockedCallback} />);
+
+    expect(mockedCallback).toBeCalledTimes(0);
+    wrapper.find('Button').simulate('click');
+    expect(mockedCallback).toBeCalledTimes(1);
+  })
 });
