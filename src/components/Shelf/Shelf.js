@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import DeleteShelfButton from './DeleteShelfButton/DeleteShelfButton';
+import Button from '../Button/Button';
 import DroppableReleasesList from '../ReleasesList/DroppableReleasesList';
 import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
 import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
-import styles from './Shelf.module.scss';
 import EditableField from '../EditableField/EditableField';
+import { ReactComponent as IconTrash } from '../../images/FontAwesomeIcons/trash.svg';
+import styles from './Shelf.module.scss';
 
 class Shelf extends React.Component {
   static propTypes = {
@@ -43,10 +44,10 @@ class Shelf extends React.Component {
         <div className={styles.container}>
           <EditableField className={styles.name} initialValue={name} setValueCallback={this.handleNameChange} tag="h3" />
 
-          <DeleteShelfButton onClick={this.onClickDelete}>
+          <Button onClick={this.onClickDelete}>
             <ScreenReaderOnly>Delete Shelf</ScreenReaderOnly>
-            🗑
-          </DeleteShelfButton>
+            <IconTrash className={styles.icon} />
+          </Button>
         </div>
 
         <DroppableReleasesList releases={releases} droppableId={id} />

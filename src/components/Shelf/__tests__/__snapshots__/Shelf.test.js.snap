@@ -13,14 +13,21 @@ exports[`Shelf should render 1`] = `
       setValueCallback={[Function]}
       tag="h3"
     />
-    <DeleteShelfButton
+    <Button
+      disabled={false}
+      fullWidth={false}
       onClick={[Function]}
+      tabIndex={0}
+      theme="primary"
+      type="button"
     >
       <ScreenReaderOnly>
         Delete Shelf
       </ScreenReaderOnly>
-      🗑
-    </DeleteShelfButton>
+      <ReactComponent
+        className="icon"
+      />
+    </Button>
   </div>
   <DroppableReleasesList
     droppableId="some-super-duper-unique-id-123"

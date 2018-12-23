@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .name {
@@ -21,16 +21,19 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   height: 40px;
-  margin-top: 1rem;
 }
 
 .itemsContainer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 12rem;
+  height: 11rem;
   padding: 1rem 0;
   margin-bottom: 0.5rem;
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+.icon {
+  height: $iconHeight;
 }
