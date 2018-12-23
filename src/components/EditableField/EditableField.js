@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import Button from '../Button/Button';
 import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 import { ReactComponent as IconPencil } from '../../images/FontAwesomeIcons/pencil.svg';
@@ -9,12 +10,14 @@ import styles from './EditableField.module.scss';
 
 export default class EditableField extends React.Component {
   static propTypes = {
+    className: PropTypes.string,
     initialValue: PropTypes.string.isRequired,
     setValueCallback: PropTypes.func,
     tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   };
 
   static defaultProps = {
+    className: '',
     setValueCallback: () => {},
     tag: 'span',
   };
@@ -50,11 +53,11 @@ export default class EditableField extends React.Component {
   };
 
   render() {
-    const { tag: Tag } = this.props;
+    const { className, tag: Tag } = this.props;
     const { isEditing, value } = this.state;
 
     return (
-      <div className={styles.EditableField}>
+      <div className={classNames(styles.EditableField, className)}>
         {isEditing ? (
           <>
             <input value={value} onChange={this.onChange} className={styles.input} />
@@ -69,7 +72,7 @@ export default class EditableField extends React.Component {
           </>
         ) : (
           <>
-            <Tag>{value}</Tag>
+            <Tag className={styles.valueTag}>{value}</Tag>
             <Button className={styles.button} onClick={this.setEditing}>
               <ScreenReaderOnly>Edit</ScreenReaderOnly>
               <IconPencil className={styles.icon} />

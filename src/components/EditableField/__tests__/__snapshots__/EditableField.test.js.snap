@@ -48,7 +48,9 @@ exports[`EditableField should render 1`] = `
 <div
   className="EditableField"
 >
-  <span>
+  <span
+    className="valueTag"
+  >
     test
   </span>
   <Button

@@ -5,9 +5,11 @@ import DroppableReleasesList from '../ReleasesList/DroppableReleasesList';
 import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
 import ScreenReaderOnly from '../ScreenReaderOnly/ScreenReaderOnly';
 import styles from './Shelf.module.scss';
+import EditableField from '../EditableField/EditableField';
 
 class Shelf extends React.Component {
   static propTypes = {
+    changeShelfName: PropTypes.func.isRequired,
     deleteShelf: PropTypes.func.isRequired,
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -22,9 +24,15 @@ class Shelf extends React.Component {
     releases: [],
   };
 
-  onClick = () => {
+  onClickDelete = () => {
     const { deleteShelf, id } = this.props;
     deleteShelf(id);
+  }
+
+  handleNameChange = (value) => {
+    const { changeShelfName, id } = this.props;
+
+    changeShelfName(id, value);
   }
 
   render() {
@@ -33,9 +41,9 @@ class Shelf extends React.Component {
     return (
       <section className={styles.Shelf}>
         <div className={styles.container}>
-          <h3 className={styles.name}>{name}</h3>
+          <EditableField className={styles.name} initialValue={name} setValueCallback={this.handleNameChange} tag="h3" />
 
-          <DeleteShelfButton onClick={this.onClick}>
+          <DeleteShelfButton onClick={this.onClickDelete}>
             <ScreenReaderOnly>Delete Shelf</ScreenReaderOnly>
             🗑
           </DeleteShelfButton>

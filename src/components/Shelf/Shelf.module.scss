@@ -16,10 +16,12 @@
 }
 
 .name {
-  width: 75%;
+  max-width: 50%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  height: 40px;
+  margin-top: 1rem;
 }
 
 .itemsContainer {

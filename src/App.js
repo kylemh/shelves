@@ -74,6 +74,32 @@ class App extends Component {
   };
 
   /**
+   * @description Change a shelf's name
+   * @param {string} shelfId
+   * @param {string} newShelfName the validated value to be set as the Shelf's new name
+   */
+  changeShelfName = (shelfId, newShelfName) => {
+    const { shelves } = this.state;
+
+    const shelf = shelves[shelfId];
+
+    // Don't do anything if name is the same
+    if (shelf.name === newShelfName) {
+      return;
+    }
+
+    this.setState(prevState => ({
+      shelves: {
+        ...prevState.shelves,
+        [shelfId]: {
+          ...prevState.shelves[shelfId],
+          name: newShelfName,
+        },
+      },
+    }));
+  };
+
+  /**
    * @description Series of conditional setStates to keep order within every draggable list
    * @param {object} result
    * @param {{ droppableId: string, index: number }} result.source
@@ -184,7 +210,7 @@ class App extends Component {
     const { state } = this;
 
     return (
-      <main>
+      <main className={styles.App}>
         <Header />
 
         <DragDropContext onDragEnd={this.onDragEnd}>
@@ -200,6 +226,7 @@ class App extends Component {
                   releases={releases}
                   id={shelfID}
                   key={shelfID}
+                  changeShelfName={this.changeShelfName}
                   deleteShelf={this.deleteShelf}
                 />
               );

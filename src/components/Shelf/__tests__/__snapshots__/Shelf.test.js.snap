@@ -7,11 +7,12 @@ exports[`Shelf should render 1`] = `
   <div
     className="container"
   >
-    <h3
+    <EditableField
       className="name"
-    >
-      Test Shelf
-    </h3>
+      initialValue="Test Shelf"
+      setValueCallback={[Function]}
+      tag="h3"
+    />
     <DeleteShelfButton
       onClick={[Function]}
     >

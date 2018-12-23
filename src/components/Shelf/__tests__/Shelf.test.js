@@ -11,6 +11,7 @@ describe('Shelf', () => {
   it('should render', () => {
     const wrapper = shallow(
       <Shelf
+        changeShelfName={jest.fn()}
         deleteShelf={jest.fn()}
         id="some-super-duper-unique-id-123"
         name="Test Shelf"
