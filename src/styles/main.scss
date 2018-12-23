@@ -3,7 +3,6 @@
 
 body {
   font-family: $secondaryFont;
-  background-color: $primary;
   margin: 0;
   padding: 0;
   hyphens: none;
@@ -11,6 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+main {
+  background-color: $primary;
 }
 
 h1,
@@ -21,6 +24,16 @@ h5,
 h6 {
   color: $primary;
   fill: $primary;
+}
+
+button,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $primaryFont;
   font-weight: bold;
 }

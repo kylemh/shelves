@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditableField should be renderable when it in edit state 1`] = `
+<div
+  className="EditableField"
+>
+  <input
+    className="input"
+    onChange={[Function]}
+    value="test"
+  />
+  <Button
+    className="button"
+    disabled={false}
+    fullWidth={false}
+    onClick={[Function]}
+    tabIndex={0}
+    theme="primary"
+    type="submit"
+  >
+    <ScreenReaderOnly>
+      Save
+    </ScreenReaderOnly>
+    <ReactComponent
+      className="icon"
+    />
+  </Button>
+  <Button
+    className="button"
+    disabled={false}
+    fullWidth={false}
+    onClick={[Function]}
+    tabIndex={0}
+    theme="secondary"
+    type="button"
+  >
+    <ScreenReaderOnly>
+      Cancel
+    </ScreenReaderOnly>
+    <ReactComponent
+      className="icon"
+    />
+  </Button>
+</div>
+`;
+
+exports[`EditableField should render 1`] = `
+<div
+  className="EditableField"
+>
+  <span>
+    test
+  </span>
+  <Button
+    className="button"
+    disabled={false}
+    fullWidth={false}
+    onClick={[Function]}
+    tabIndex={0}
+    theme="primary"
+    type="button"
+  >
+    <ScreenReaderOnly>
+      Edit
+    </ScreenReaderOnly>
+    <ReactComponent
+      className="icon"
+    />
+  </Button>
+</div>
+`;
