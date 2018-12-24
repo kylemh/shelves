@@ -50,7 +50,7 @@ class Shelf extends React.Component {
           </Button>
         </div>
 
-        <DroppableReleasesList releases={releases} droppableId={id} />
+        <DroppableReleasesList className={styles.releases} releases={releases} droppableId={id} />
       </section>
     );
   }

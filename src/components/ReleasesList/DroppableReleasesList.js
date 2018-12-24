@@ -6,22 +6,29 @@ import ReleaseItemPropTypes from '../ReleaseItem/ReleaseItemPropTypes';
 
 export default class DroppableReleasesList extends React.Component {
   static propTypes = {
+    className: PropTypes.string,
+    droppableId: PropTypes.string.isRequired,
     releases: PropTypes.arrayOf(
       PropTypes.shape({
         ...ReleaseItemPropTypes,
       })
     ).isRequired,
-    droppableId: PropTypes.string.isRequired,
+  };
+
+  static defaultProps = {
+    className: '',
   };
 
   render() {
-    const { releases, droppableId } = this.props;
+    const { className, droppableId, releases } = this.props;
 
     return (
       <Droppable droppableId={droppableId} direction="horizontal">
-        {provided => (
+        {(provided, snapshot) => (
           <ReleasesList
+            className={className}
             releases={releases}
+            isDraggingOver={snapshot.isDraggingOver}
             innerRef={provided.innerRef}
             placeholder={provided.placeholder}
             {...provided.droppableProps}
