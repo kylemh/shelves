@@ -15,23 +15,15 @@
   margin: 1rem;
 }
 
-.name {
-  max-width: 50%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  height: 40px;
-}
-
 .itemsContainer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 11rem;
   padding: 1rem 0;
   margin-bottom: 0.5rem;
   overflow-x: auto;
   overflow-y: hidden;
+  height: 150px;
 }
 
 .icon {

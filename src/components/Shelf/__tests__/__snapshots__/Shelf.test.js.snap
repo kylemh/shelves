@@ -8,17 +8,17 @@ exports[`Shelf should render 1`] = `
     className="container"
   >
     <EditableField
-      className="name"
+      className=""
       initialValue="Test Shelf"
       setValueCallback={[Function]}
-      tag="h3"
+      tag="span"
     />
     <Button
       disabled={false}
       fullWidth={false}
       onClick={[Function]}
       tabIndex={0}
-      theme="primary"
+      theme="secondary"
       type="button"
     >
       <ScreenReaderOnly>
@@ -30,6 +30,7 @@ exports[`Shelf should render 1`] = `
     </Button>
   </div>
   <DroppableReleasesList
+    className="releases"
     droppableId="some-super-duper-unique-id-123"
     releases={
       Array [

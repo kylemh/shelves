@@ -42,9 +42,9 @@ class Shelf extends React.Component {
     return (
       <section className={styles.Shelf}>
         <div className={styles.container}>
-          <EditableField className={styles.name} initialValue={name} setValueCallback={this.handleNameChange} tag="h3" />
+          <EditableField initialValue={name} setValueCallback={this.handleNameChange} />
 
-          <Button onClick={this.onClickDelete}>
+          <Button onClick={this.onClickDelete} theme="secondary">
             <ScreenReaderOnly>Delete Shelf</ScreenReaderOnly>
             <IconTrash className={styles.icon} />
           </Button>
