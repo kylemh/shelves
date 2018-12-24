@@ -54,7 +54,7 @@ class Shelf extends React.Component {
           className={styles.releases}
           releases={releases}
           droppableId={id}
-          emptyStateMessage="Drag releases onto this shelf!"
+          emptyStateMessage="Drag items onto this shelf!"
         />
       </section>
     );
