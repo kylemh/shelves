@@ -1,3 +1,4 @@
+@import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 
 .EditableField {
@@ -5,6 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  height: 40px;
+  width: 95%;
 }
 
 .icon {
@@ -12,15 +15,29 @@
 }
 
 .button {
-  margin: 0 0 0 1rem;
+  margin: 0 0.5rem;
+}
+
+.value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .input {
-  font-size: 1rem;
-  height: 1.75rem;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px dashed $primary;
+  color: $primary;
+  font-size: 1.25rem;
 }
 
-.valueTag,
+.value,
 .input {
   margin: 0;
+  width: 200px;
+
+  @include below-screen-md {
+    width: 100px;
+  }
 }

@@ -61,10 +61,12 @@ export default class EditableField extends React.Component {
         {isEditing ? (
           <>
             <input value={value} onChange={this.onChange} className={styles.input} />
+
             <Button className={styles.button} onClick={this.saveEdit} type="submit">
               <ScreenReaderOnly>Save</ScreenReaderOnly>
               <IconCheck className={styles.icon} />
             </Button>
+
             <Button className={styles.button} onClick={this.cancelEdit} theme="secondary">
               <ScreenReaderOnly>Cancel</ScreenReaderOnly>
               <IconX className={styles.icon} />
@@ -72,7 +74,8 @@ export default class EditableField extends React.Component {
           </>
         ) : (
           <>
-            <Tag className={styles.valueTag}>{value}</Tag>
+            <Tag className={styles.value}>{value}</Tag>
+
             <Button className={styles.button} onClick={this.setEditing}>
               <ScreenReaderOnly>Edit</ScreenReaderOnly>
               <IconPencil className={styles.icon} />

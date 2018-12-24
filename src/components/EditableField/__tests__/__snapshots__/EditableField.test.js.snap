@@ -49,7 +49,7 @@ exports[`EditableField should render 1`] = `
   className="EditableField"
 >
   <span
-    className="valueTag"
+    className="value"
   >
     test
   </span>
