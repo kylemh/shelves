@@ -13,4 +13,12 @@ describe('ReleasesList', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render an empty state message if releases passed is an empty array', () => {
+    const emptyStateMessage = 'Never gonna give you up';
+
+    const wrapper = shallow(<ReleasesList releases={[]} emptyStateMessage={emptyStateMessage} />);
+
+    expect(wrapper.find('.emptyStateMessage').text()).toStrictEqual(emptyStateMessage);
+  });
 });
