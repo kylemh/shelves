@@ -24,13 +24,14 @@ export default class DraggableReleaseItem extends React.Component {
 
     return (
       <Draggable draggableId={id} index={index}>
-        {provided => (
+        {(provided, snapshot) => (
           <ReleaseItem
             primaryArtistName={primaryArtistName}
             title={title}
             year={year}
             id={id}
             innerRef={provided.innerRef}
+            isDragging={snapshot.isDragging}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
           />

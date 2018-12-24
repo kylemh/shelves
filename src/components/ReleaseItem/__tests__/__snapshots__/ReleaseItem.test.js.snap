@@ -4,21 +4,28 @@ exports[`ReleaseItem should render 1`] = `
 <article
   className="ReleaseItem"
 >
-  <h4
-    className="title"
+  <div
+    className="details"
   >
-    Cosmogramma
-  </h4>
-  <h5
-    className="artist"
-  >
-    by 
-    Flying Lotus
-  </h5>
-  <h5
-    className="year"
-  >
-    2010
-  </h5>
+    <h4
+      className="title"
+    >
+      Cosmogramma
+    </h4>
+    <h5
+      className="artist"
+    >
+      by 
+      Flying Lotus
+    </h5>
+    <h5
+      className="year"
+    >
+      2010
+    </h5>
+  </div>
+  <hr
+    className="dragIndicator"
+  />
 </article>
 `;
