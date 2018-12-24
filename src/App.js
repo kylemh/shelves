@@ -244,7 +244,7 @@ class App extends Component {
               <p>
                 Create, delete, and rename shelves as a means to temporarily arrange your music!
               </p>
-              <p>You can items all around the rack above and the shelves you make.</p>
+              <p>You can drag and drop items all around the rack above and the shelves you make.</p>
             </div>
           </div>
         )}
