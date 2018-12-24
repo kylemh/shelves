@@ -1,14 +1,14 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/variables.scss';
 
+$releaseItemBorderRadius: 10px;
+
 .ReleaseItem {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  position: relative;
+  vertical-align: middle;
   padding: 1rem;
   margin: 0 1rem;
-  border-radius: 10px;
+  border-radius: $releaseItemBorderRadius;
   border: 1px solid $gray;
   height: 150px;
   width: 150px;
@@ -51,26 +51,24 @@
 }
 
 .dragIndicator {
-  content: '....';
-  height: 20px;
-  width: 10px;
-  border: none;
-  font-size: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid $primary;
+  background-color: darken($color: $white, $amount: 5);
+  border-bottom-left-radius: $releaseItemBorderRadius;
+  border-bottom-right-radius: $releaseItemBorderRadius;
+  color: transparentize($color: $primary, $amount: 0.5);
+  font-size: 0.75rem;
+  padding-bottom: 0.125rem;
   letter-spacing: 2px;
-  line-height: 5px;
-  padding: 3px;
-  text-shadow: 0 0 2px $primary;
-  transform: scale(1.25) rotate(90deg);
-  position: relative;
-  top: 1rem;
-}
+  text-align: center;
 
-.dragIndicator:after {
-  content: '.. .. .. ..';
+  width: 100%;
 }
 
 .isDragging {
-  background-color: #FFFFFF;
+  background-color: lighten($color: $white, $amount: 100);
   box-shadow: 0 10px 2px rgba(0, 0, 0, 0.25);
   transition:
     background-color $animationDuration $animationTiming,

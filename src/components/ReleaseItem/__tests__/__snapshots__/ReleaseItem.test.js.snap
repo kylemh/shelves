@@ -24,8 +24,10 @@ exports[`ReleaseItem should render 1`] = `
       2010
     </h5>
   </div>
-  <hr
+  <span
     className="dragIndicator"
-  />
+  >
+    ●●●
+  </span>
 </article>
 `;

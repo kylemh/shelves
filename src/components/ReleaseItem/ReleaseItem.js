@@ -32,7 +32,7 @@ export default class ReleaseItem extends React.Component {
           {Boolean(year) && <h5 className={styles.year}>{year}</h5>}
         </div>
 
-        <hr className={styles.dragIndicator} />
+        <span className={styles.dragIndicator}>●●●</span>
       </article>
     );
   }
