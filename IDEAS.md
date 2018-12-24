@@ -11,3 +11,4 @@ A collection of thoughts on the application in its "finished" state and what it 
 - Allow the Discogs user being inspected to be edited
 - Elastic search of rack items
 - Come up with way to dynamically grab album arts for <ReleaseItem>
+- Use Cypress to test DND logic + anything relying on window/document
