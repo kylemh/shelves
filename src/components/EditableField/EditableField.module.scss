@@ -22,23 +22,34 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-weight: bold;
+
+  /* added to avoid jank when switching between value/input */
+  border-bottom: 1px dashed rgba(0, 0, 0, 0); // vertical
+  padding-left: 1px; // horizontal
 }
 
 .input {
+  display: block;
   background-color: inherit;
   border: none;
-  border-bottom: 1px dashed $primary;
   color: $primary;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  width: auto;
+  border-bottom: 1px dashed $primary;
 }
 
 .value,
 .input {
   font-family: $primaryFont;
-  margin: 0;
-  width: 200px;
+  width: 300px;
+  transition: width $animationDuration $animationTiming;
 
   @include below-screen-md {
+    width: 200px;
+  }
+
+  @include below-screen-sm {
     width: 100px;
   }
 }
