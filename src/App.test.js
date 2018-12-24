@@ -13,10 +13,9 @@ const mountAndWait = async component => {
   return wrapper;
 };
 
-// onGet('/users/blacklight/collection/folders/0/releases')
-beforeEach(async () => {
+beforeEach(() => {
   mockedDiscogsAPI.reset();
-  mockedDiscogsAPI.onAny().replyOnce(200, {
+  mockedDiscogsAPI.onGet('users/blacklight/collection/folders/0/releases').replyOnce(200, {
     ...mockedDiscogsAPIResponse,
   });
 });
@@ -63,4 +62,13 @@ describe('App', () => {
 
     expect(wrapper.find('Shelf').exists()).not.toBeTruthy();
   });
+
+  it('should show error state on bad API response', async () => {
+    mockedDiscogsAPI.reset();
+    mockedDiscogsAPI.onGet('users/blacklight/collection/folders/0/releases').replyOnce(404);
+
+    const wrapper = await mountAndWait(<App />);
+    wrapper.update();
+    expect(wrapper.find('.emptyStateMessage').text()).toStrictEqual('Something is wrong with Discogs... Try again later!');
+  })
 });
