@@ -38,6 +38,8 @@ export default class ReleasesList extends React.Component {
       ...rest
     } = this.props;
 
+    const isEmpty = releases.length === 0;
+
     return (
       <section
         className={classNames(styles.ReleasesList, className, {
@@ -49,8 +51,14 @@ export default class ReleasesList extends React.Component {
         {releases.map((release, index) => (
           <DraggableReleaseItem index={index} key={release.id} {...release} />
         ))}
-        {releases.length === 0 && emptyStateMessage && <span className={styles.emptyStateMessage}>{emptyStateMessage}</span>}
-        {placeholder}
+
+        {isEmpty && emptyStateMessage && (
+            <span className={styles.emptyStateMessage}>{emptyStateMessage}</span>
+          )}
+
+        {/* Only render placeholder when it's necessary, so that
+            emptyStateMessage doesn't shift when an item is dragged over */}
+        {!isEmpty && placeholder}
       </section>
     );
   }
