@@ -20,14 +20,6 @@ export default class ReleasesList extends React.Component {
     placeholder: undefined,
   };
 
-  shouldComponentUpdate(nextProps) {
-    if (nextProps.releases === this.props.releases) {
-      return false;
-    }
-
-    return true;
-  }
-
   render() {
     const { releases, placeholder, innerRef, ...rest } = this.props;
 
