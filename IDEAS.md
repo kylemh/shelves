@@ -8,6 +8,8 @@ A collection of thoughts on the application in its "finished" state and what it 
 - Use Cypress to test DND logic + anything relying on window/document
 - Improve the loading indicator
 - Use CSS-in-JS library to have faster and consistent DnD-related stylings/animations. Currently, transititions aren't respected at the start of DnD animations.
+- Allow for customization of shelf color
+- Highlight droppable areas onDragStart (I can easily do this, but could not pick a design I was happy with)
 
 - Requirement: "Get ALL releases"
 
