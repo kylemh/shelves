@@ -8,25 +8,35 @@ import styles from './ReleasesList.module.scss';
 export default class ReleasesList extends React.Component {
   static propTypes = {
     className: PropTypes.string,
+    emptyStateMessage: PropTypes.string,
+    innerRef: PropTypes.func,
+    isDraggingOver: PropTypes.bool,
+    placeholder: PropTypes.element,
     releases: PropTypes.arrayOf(
       PropTypes.shape({
         ...ReleaseItemPropTypes,
       })
     ).isRequired,
-    innerRef: PropTypes.func,
-    isDraggingOver: PropTypes.bool,
-    placeholder: PropTypes.element,
   };
 
   static defaultProps = {
     className: '',
+    emptyStateMessage: '',
     innerRef: undefined,
     isDraggingOver: false,
     placeholder: undefined,
   };
 
   render() {
-    const { className, innerRef, isDraggingOver, placeholder, releases, ...rest } = this.props;
+    const {
+      className,
+      emptyStateMessage,
+      innerRef,
+      isDraggingOver,
+      placeholder,
+      releases,
+      ...rest
+    } = this.props;
 
     return (
       <section
@@ -39,6 +49,7 @@ export default class ReleasesList extends React.Component {
         {releases.map((release, index) => (
           <DraggableReleaseItem index={index} key={release.id} {...release} />
         ))}
+        {releases.length === 0 && emptyStateMessage && <span className={styles.emptyStateMessage}>{emptyStateMessage}</span>}
         {placeholder}
       </section>
     );

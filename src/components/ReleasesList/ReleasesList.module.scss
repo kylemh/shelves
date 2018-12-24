@@ -12,13 +12,26 @@
   border: 2px solid rgba(0, 0, 0, 0); // avoid jank in resize by already having a border
   border-radius: inherit; // match border radius in container if it exists
 
-  min-height: 200px;
+  $releasesListHeight: 200px;
+  min-height: $releasesListHeight;
 
   @include below-screen-lg {
-    min-height: 175px;
+    $releasesListHeight: 175px;
+    min-height: $releasesListHeight;
   }
+
   @include below-screen-md {
-    min-height: 150px;
+    $releasesListHeight: 150px;
+    min-height: $releasesListHeight;
+  }
+
+  .emptyStateMessage {
+    color: $primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $releasesListHeight;
+    width: 100%;
   }
 }
 

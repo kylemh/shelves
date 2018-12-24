@@ -12,20 +12,18 @@ class App extends Component {
   state = {
     rack: [],
     shelves: {},
-    isError: false,
+    errorMessage: '',
     isLoading: true,
     apiPage: 0,
   };
 
   async componentDidMount() {
-    const { pagination, releases } = await getReleasesFromUser('blacklight', 0);
+    const { pagination, releases, errorMessage = '' } = await getReleasesFromUser('blacklight', 0);
 
-    if (pagination && releases) {
-      const rack = releases.map(release => transformReleaseData(release));
-      this.setState({ rack, apiPage: pagination.page }, () => this.setState({ isLoading: false }));
-    } else {
-      this.setState({ isError: true }, () => this.setState({ isLoading: false }));
-    }
+    const rack = releases.map(release => transformReleaseData(release));
+    this.setState({ rack, apiPage: pagination.page, errorMessage }, () =>
+      this.setState({ isLoading: false })
+    );
   }
 
   createShelf = () => {
@@ -217,6 +215,7 @@ class App extends Component {
   render() {
     const { state } = this;
 
+    // Called once in render to avoid multiple function calls
     const shelfIds = Object.keys(state.shelves);
 
     return (
@@ -225,7 +224,11 @@ class App extends Component {
 
         <main className={styles.main}>
           <DragDropContext onDragEnd={this.onDragEnd}>
-            <DroppableReleasesList releases={state.rack} droppableId="initial-rack" />
+            <DroppableReleasesList
+              droppableId="initial-rack"
+              emptyStateMessage={state.errorMessage || `${state.isLoading ? 'Loading...' : ''}`}
+              releases={state.rack}
+            />
 
             <div className={styles.container}>
               {shelfIds.map(shelfID => {
