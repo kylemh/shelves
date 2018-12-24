@@ -12,11 +12,14 @@ export const discogsAPI = axios.create({
  * @throws
  * @returns
  */
-export const getReleasesFromUser = async (user = 'blacklight', pageNumber = 0) => {
+export const getReleasesFromUser = async (user, page) => {
   try {
-    const { data } = await discogsAPI.get(
-      `users/${user}/collection/folders/${pageNumber}/releases`
-    );
+    const { data } = await discogsAPI.get(`users/${user}/collection/folders/0/releases`, {
+      params: {
+        per_page: 25,
+        page,
+      },
+    });
 
     return data;
   } catch (e) {
