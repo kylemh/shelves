@@ -1,1 +1,7 @@
 @import '../src/styles/main.scss';
+
+// override only in storybook so that components are visible
+body {
+  background-color: #fafafa;
+  margin: 1rem;
+}
