@@ -28,13 +28,13 @@ class Shelf extends React.Component {
   onClickDelete = () => {
     const { deleteShelf, id } = this.props;
     deleteShelf(id);
-  }
+  };
 
-  handleNameChange = (value) => {
+  handleNameChange = value => {
     const { changeShelfName, id } = this.props;
 
     changeShelfName(id, value);
-  }
+  };
 
   render() {
     const { id, name, releases } = this.props;
@@ -50,7 +50,12 @@ class Shelf extends React.Component {
           </Button>
         </div>
 
-        <DroppableReleasesList className={styles.releases} releases={releases} droppableId={id} />
+        <DroppableReleasesList
+          className={styles.releases}
+          releases={releases}
+          droppableId={id}
+          emptyStateMessage="Drag releases onto this shelf!"
+        />
       </section>
     );
   }
