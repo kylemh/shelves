@@ -212,43 +212,47 @@ class App extends Component {
     const shelfIds = Object.keys(state.shelves);
 
     return (
-      <main className={styles.App}>
+      <>
         <Header createShelf={this.createShelf} />
 
-        <DragDropContext onDragEnd={this.onDragEnd}>
-          <DroppableReleasesList releases={state.rack} droppableId="initial-rack" />
+        <main className={styles.main}>
+          <DragDropContext onDragEnd={this.onDragEnd}>
+            <DroppableReleasesList releases={state.rack} droppableId="initial-rack" />
 
-          <div className={styles.container}>
-            {shelfIds.map(shelfID => {
-              const { name, releases } = state.shelves[shelfID];
+            <div className={styles.container}>
+              {shelfIds.map(shelfID => {
+                const { name, releases } = state.shelves[shelfID];
 
-              return (
-                <Shelf
-                  name={name}
-                  releases={releases}
-                  id={shelfID}
-                  key={shelfID}
-                  changeShelfName={this.changeShelfName}
-                  deleteShelf={this.deleteShelf}
-                />
-              );
-            })}
-          </div>
-        </DragDropContext>
-
-        {shelfIds.length === 0 && (
-          <div className={styles.container}>
-            <CreateShelfButton createShelf={this.createShelf} />
-
-            <div className={styles.intro}>
-              <p>
-                Create, delete, and rename shelves as a means to temporarily arrange your music!
-              </p>
-              <p>You can drag and drop items all around the rack above and the shelves you make.</p>
+                return (
+                  <Shelf
+                    name={name}
+                    releases={releases}
+                    id={shelfID}
+                    key={shelfID}
+                    changeShelfName={this.changeShelfName}
+                    deleteShelf={this.deleteShelf}
+                  />
+                );
+              })}
             </div>
-          </div>
-        )}
-      </main>
+          </DragDropContext>
+
+          {shelfIds.length === 0 && (
+            <div className={styles.container}>
+              <CreateShelfButton createShelf={this.createShelf} />
+
+              <div className={styles.intro}>
+                <p>
+                  Create, delete, and rename shelves as a means to temporarily arrange your music!
+                </p>
+                <p>
+                  You can drag and drop items all around the rack above and the shelves you make.
+                </p>
+              </div>
+            </div>
+          )}
+        </main>
+      </>
     );
   }
 }

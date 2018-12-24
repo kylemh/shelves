@@ -1,7 +1,8 @@
 @import './styles/variables.scss';
 
-.App {
-  background-color: $primary;
+.main {
+  background-color: inherit;
+  padding-top: $appHeaderHeight;
 }
 
 .container {
