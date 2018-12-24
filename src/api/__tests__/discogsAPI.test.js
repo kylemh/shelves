@@ -18,18 +18,4 @@ describe('discogsAPI', () => {
     expect(response.config.baseURL).toStrictEqual(baseURL);
     mockedDiscogsAPI.reset();
   });
-
-  it('should be able to call getReleasesFromUser without passed parameters', async () => {
-    mockedDiscogsAPI.reset();
-    const testRoute = '/users/blacklight/collection/folders/0/releases';
-    mockedDiscogsAPI.onGet(testRoute).reply(200, {
-      operationStatus: 'SUCCESS',
-      errorsList: [],
-    });
-
-    const response = await getReleasesFromUser();
-
-    expect(response.operationStatus).toStrictEqual('SUCCESS');
-    mockedDiscogsAPI.reset();
-  });
 });
