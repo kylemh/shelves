@@ -13,10 +13,26 @@ const storyData = mockedReleases.releases
 
 storiesOf('ReleasesList', module)
   .addDecorator(withKnobs)
-  .add('default', () => (
+  .add('with releases', () => (
     <DragDropContext onDragEnd={() => {}}>
       <DroppableReleasesList
+        emptyStateMessage={text(
+          'emptyStateMessage',
+          'This shows up when no items are in the list passed to `releases`'
+        )}
         releases={storyData}
+        droppableId={text('droppableId', 'this-must-be-unique-within-context')}
+      />
+    </DragDropContext>
+  ))
+  .add('without releases', () => (
+    <DragDropContext onDragEnd={() => {}}>
+      <DroppableReleasesList
+        emptyStateMessage={text(
+          'emptyStateMessage',
+          'This shows up when no items are in the list passed to `releases`'
+        )}
+        releases={[]}
         droppableId={text('droppableId', 'this-must-be-unique-within-context')}
       />
     </DragDropContext>

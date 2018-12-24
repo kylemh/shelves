@@ -17,6 +17,7 @@ storiesOf('Shelf', module)
   .add('default', () => (
     <DragDropContext onDragEnd={() => {}}>
       <Shelf
+        changeShelfName={action('changeShelf')}
         deleteShelf={action('deleteShelf')}
         id={text('id', 'nsjkabdlbd219')}
         name={text('name', 'This Is The Name Of The Shelf')}
