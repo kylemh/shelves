@@ -2,6 +2,7 @@
 
 A collection of thoughts on the application in its "finished" state and what it would look like going forward. This section is getting "UX" thoughts on the table that are a bit over the top for a take-home...
 
+- Give the ability to create a new shelf by dragging to an empty space or on top of the "CreateShelfButton"
 - Refactor styles within ReleasesList, Shelf, and ReleaseItem such that height is handled in a uniform manner (with one source of truth)
 - Save shelves in localStorage or in a database
 - Come up with way to dynamically grab album arts for <ReleaseItem>
