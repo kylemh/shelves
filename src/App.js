@@ -12,12 +12,20 @@ class App extends Component {
   state = {
     rack: [],
     shelves: {},
+    isError: false,
+    isLoading: true,
+    apiPage: 0,
   };
 
   async componentDidMount() {
-    const { pagination, releases } = await getReleasesFromUser();
-    const rack = releases.map(release => transformReleaseData(release));
-    this.setState({ rack });
+    const { pagination, releases } = await getReleasesFromUser('blacklight', 0);
+
+    if (pagination && releases) {
+      const rack = releases.map(release => transformReleaseData(release));
+      this.setState({ rack, apiPage: pagination.page }, () => this.setState({ isLoading: false }));
+    } else {
+      this.setState({ isError: true }, () => this.setState({ isLoading: false }));
+    }
   }
 
   createShelf = () => {
