@@ -15,9 +15,11 @@ const mountAndWait = async component => {
 
 beforeEach(() => {
   mockedDiscogsAPI.reset();
-  mockedDiscogsAPI.onGet('users/blacklight/collection/folders/0/releases').replyOnce(200, {
-    ...mockedDiscogsAPIResponse,
-  });
+  mockedDiscogsAPI
+    .onGet('users/blacklight/collection/folders/0/releases?per_page=25&page=0')
+    .replyOnce(200, {
+      ...mockedDiscogsAPIResponse,
+    });
 });
 
 describe('App', () => {
@@ -69,6 +71,8 @@ describe('App', () => {
 
     const wrapper = await mountAndWait(<App />);
     wrapper.update();
-    expect(wrapper.find('.emptyStateMessage').text()).toStrictEqual('Something is wrong with Discogs... Try again later!');
-  })
+    expect(wrapper.find('.emptyStateMessage').text()).toStrictEqual(
+      'Something is wrong with Discogs... Try again later!'
+    );
+  });
 });

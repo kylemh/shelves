@@ -18,13 +18,26 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const { pagination, releases, errorMessage = '' } = await getReleasesFromUser('blacklight', 0);
+    this.fetchDataForRack();
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.rack.length === 0 && prevState.apiPage > 0 && !prevState.isLoading) {
+      this.setState({ isLoading: true }, () =>
+        this.fetchDataForRack('blacklight', prevState.apiPage + 1)
+      );
+    }
+  }
+
+  fetchDataForRack = async (user = 'blacklight', pageNumber = 0) => {
+    const { pagination, releases, errorMessage = '' } = await getReleasesFromUser(user, pageNumber);
 
     const rack = releases.map(release => transformReleaseData(release));
+
     this.setState({ rack, apiPage: pagination.page, errorMessage }, () =>
       this.setState({ isLoading: false })
     );
-  }
+  };
 
   createShelf = () => {
     const numberOfShelves = Object.keys(this.state.shelves).length;
