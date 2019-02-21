@@ -21,22 +21,12 @@ class App extends Component {
     this.fetchDataForRack();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    if (this.state.rack.length === 0 && prevState.apiPage > 0 && !prevState.isLoading) {
-      this.setState({ isLoading: true }, () =>
-        this.fetchDataForRack('blacklight', prevState.apiPage + 1)
-      );
-    }
-  }
-
   fetchDataForRack = async (user = 'blacklight', pageNumber = 0) => {
     const { pagination, releases, errorMessage = '' } = await getReleasesFromUser(user, pageNumber);
 
-    const rack = releases.map(release => transformReleaseData(release));
+    const rack = releases.map((release) => transformReleaseData(release));
 
-    this.setState({ rack, apiPage: pagination.page, errorMessage }, () =>
-      this.setState({ isLoading: false })
-    );
+    this.setState({ rack, apiPage: pagination.page, errorMessage, isLoading: false });
   };
 
   createShelf = () => {
@@ -50,7 +40,7 @@ class App extends Component {
         .toString(36)
         .substr(2, 5);
 
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       shelves: {
         ...prevState.shelves,
         [id]: {
@@ -65,12 +55,12 @@ class App extends Component {
    * @description Remove shelf and contained release items to the beginning of the rack
    * @param {string} shelfId
    */
-  deleteShelf = shelfId => {
+  deleteShelf = (shelfId) => {
     const { rack, shelves } = this.state;
 
     // prevent re-render of rack if no items on shelf
     if (shelves[shelfId].releases.length === 0) {
-      this.setState(prevState => {
+      this.setState((prevState) => {
         const updatedShelves = prevState.shelves;
         delete updatedShelves[shelfId];
 
@@ -81,7 +71,7 @@ class App extends Component {
 
     const updatedRack = [...shelves[shelfId].releases, ...rack];
 
-    this.setState(prevState => {
+    this.setState((prevState) => {
       const updatedShelves = prevState.shelves;
       delete updatedShelves[shelfId];
 
@@ -107,7 +97,7 @@ class App extends Component {
       return;
     }
 
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       shelves: {
         ...prevState.shelves,
         [shelfId]: {
@@ -124,8 +114,8 @@ class App extends Component {
    * @param {{ droppableId: string, index: number }} result.source
    * @param {{ droppableId: string, index: number }} result.destination
    */
-  onDragEnd = result => {
-    const { rack, shelves } = this.state;
+  onDragEnd = (result) => {
+    const { apiPage, isLoading, rack, shelves } = this.state;
     const { source, destination } = result;
 
     if (didSomethingMove(source, destination)) {
@@ -140,7 +130,7 @@ class App extends Component {
         }
 
         // isFromShelf
-        this.setState(prevState => ({
+        this.setState((prevState) => ({
           shelves: {
             ...prevState.shelves,
             [source.droppableId]: {
@@ -165,7 +155,7 @@ class App extends Component {
           destination
         );
 
-        this.setState(prevState => ({
+        this.setState((prevState) => ({
           rack: updatedRackItems,
           shelves: {
             ...prevState.shelves,
@@ -175,6 +165,14 @@ class App extends Component {
             },
           },
         }));
+
+        // Check if rack is empty
+        if (updatedRackItems.length === 0 && apiPage > 0 && !isLoading) {
+          this.setState({ isLoading: true }, () =>
+            this.fetchDataForRack('blacklight', apiPage + 1)
+          );
+        }
+
         return;
       }
 
@@ -187,7 +185,7 @@ class App extends Component {
           destination
         );
 
-        this.setState(prevState => ({
+        this.setState((prevState) => ({
           rack: updatedRackItems,
           shelves: {
             ...prevState.shelves,
@@ -208,7 +206,7 @@ class App extends Component {
         destination
       );
 
-      this.setState(prevState => ({
+      this.setState((prevState) => ({
         shelves: {
           ...prevState.shelves,
           [source.droppableId]: {
@@ -244,7 +242,7 @@ class App extends Component {
             />
 
             <div className={styles.container}>
-              {shelfIds.map(shelfID => {
+              {shelfIds.map((shelfID) => {
                 const { name, releases } = state.shelves[shelfID];
 
                 return (
